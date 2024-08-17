@@ -76,15 +76,15 @@
 }
 
 .bluePressButton:active{
-  background-color: #062b53;
+  background-color: #062b53 !important;
 }
 
 .yellowPressButton:hover{
-  background-color: #A1A12A;
+  background-color: #A1A12A !important;
 }
 
 .yellowPressButton:active{
-  background-color: #666617;
+  background-color: #666617 !important;
 }
 
 .switchButton{

@@ -1,0 +1,57 @@
+.form-container {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 03px6pxrgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background: #ccc;
+    margin-right: -1px; /* to make it seem attached to the input */
+  }
+  
+  .input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 04px4px0;
+    border-left: none; /* Remove the left border to merge with the icon */
+  }
+  
+  .button-login {
+    padding: 10px;
+    background-color: #004884;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #00325d;
+  }
+  

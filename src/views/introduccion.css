@@ -1,0 +1,21 @@
+/* Assuming this is in a file like Introduction.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally in the container */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1, p {
+    text-align: justify; /* Center text horizontally */
+    width: 80%; /* Limit the width of the text */
+    max-width: 600px; /* Maximum width of the text */
+    margin: 10px auto; /* Vertical spacing and horizontal auto for centering */
+  }
+  
+  button {
+    margin-top: 20px; /* Add some space above the button */
+  }

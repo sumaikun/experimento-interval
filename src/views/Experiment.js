@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import Points from "../components/Points";
 import Button from "../components/Button";
 import Box from "../components/Box";
@@ -8,9 +9,63 @@ const BLUE = "blue";
 const YELLOW = "yellow";
 
 const Experiment = () => {
-  const riIntervals = [
-    700, 1000, 1000, 1000, 4000, 4000, 4000, 7000, 7000, 7000,
-  ];
+  const location = useLocation();
+
+  // Retrieve formData from location state
+  const formData = location.state || {};
+
+  function getRIntervals(logic) {
+    let comp1RIntervals;
+
+    switch (logic) {
+      case 1:
+      case 2:
+        comp1RIntervals = [
+          700, 1000, 1000, 1000, 4000, 4000, 4000, 7000, 7000, 7000,
+        ];
+        break;
+      case 3:
+      case 4:
+        comp1RIntervals = [
+          700, 1000, 1000, 1000, 7000, 7000, 7000, 4000, 4000, 4000,
+        ];
+        break;
+      case 5:
+      case 6:
+        comp1RIntervals = [
+          700, 4000, 4000, 4000, 1000, 1000, 1000, 7000, 7000, 7000,
+        ];
+        break;
+      case 7:
+      case 8:
+        comp1RIntervals = [
+          700, 4000, 4000, 4000, 7000, 7000, 7000, 1000, 1000, 1000,
+        ];
+        break;
+      case 9:
+      case 10:
+        comp1RIntervals = [
+          700, 7000, 7000, 7000, 1000, 1000, 1000, 4000, 4000, 4000,
+        ];
+        break;
+      case 11:
+      case 12:
+        comp1RIntervals = [
+          700, 7000, 7000, 7000, 4000, 4000, 4000, 1000, 1000, 1000,
+        ];
+        break;
+      default:
+        // Default case to handle unexpected values
+        comp1RIntervals = [];
+        console.log("Invalid logic case", logic);
+    }
+
+    return comp1RIntervals;
+  }
+
+  const [riIntervals, setRiIntervals] = useState(
+    getRIntervals(Number(formData.logic ?? 1))
+  );
   const initialPoints = 1300;
   const blockTime = 20; // in seconds
   //const blockCounts = [6, 10, 10, 10, 10, 10, 10, 10, 10, 10];
@@ -41,7 +96,6 @@ const Experiment = () => {
   const [red, setRed] = useState("dark-red");
   const logEntriesRef = useRef([]);
 
-
   const intervalRef = useRef(null);
   const blockTimerRef = useRef(null);
   const endTimeRef = useRef(Date.now());
@@ -62,7 +116,6 @@ const Experiment = () => {
     logEntriesRef.current.push(logEntry); // Update ref directly
     console.log(JSON.stringify(logEntry));
   };
-  
 
   useEffect(() => {
     if (isRunning) {
@@ -102,7 +155,7 @@ const Experiment = () => {
       } else {
         logEvent("Experiment End", { result: "Complete" });
         alert("Thanks for participating in the experiment.");
-         // Trigger download of the log file
+        // Trigger download of the log file
         setTimeout(() => {
           downloadLog();
           setIsRunning(false);
