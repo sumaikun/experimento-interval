@@ -10,6 +10,7 @@ const YELLOW = "yellow";
 
 const Experiment = () => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Retrieve formData from location state
   const formData = location.state || {};
@@ -101,6 +102,9 @@ const Experiment = () => {
   const endTimeRef = useRef(Date.now());
   const blockStartTimeRef = useRef(Date.now());
   const intervalCountRef = useRef(0); // Track the number of intervals generated
+  const intervalStartTimeRef = useRef(Date.now());
+  const [isSwitchDisabled, setIsSwitchDisable] = useState(true);
+
 
   const logEvent = (eventType, details = {}) => {
     const elapsedTime = Math.max(
@@ -154,11 +158,16 @@ const Experiment = () => {
         logEvent("Break End", { result: "Break time" });
       } else {
         logEvent("Experiment End", { result: "Complete" });
+        setIsRunning(false);
         alert("Thanks for participating in the experiment.");
         // Trigger download of the log file
         setTimeout(() => {
-          downloadLog();
-          setIsRunning(false);
+          navigate("/summary", {
+            state: {
+              formData: formData,
+              jsonLog: logEntriesRef.current,
+            },
+          });
         }, 2000);
       }
 
@@ -180,6 +189,7 @@ const Experiment = () => {
 
   const handleStart = () => {
     if (!isRunning) {
+      if (isSwitchDisabled) setIsSwitchDisable(false);
       setIsRunning(true);
       endTimeRef.current = Date.now();
       blockStartTimeRef.current = Date.now(); // Reset block start time
@@ -190,6 +200,16 @@ const Experiment = () => {
   };
 
   const handleSwitch = () => {
+    const timeElapsedSinceIntervalSet =
+      Date.now() - intervalStartTimeRef.current;
+    const timeLeft = nextInterval - timeElapsedSinceIntervalSet;
+    setIsSwitchDisable(true);
+
+    if (timeLeft > 100) {
+      clearTimeout(intervalRef.current);
+      generateNextInterval(timeLeft + 500);
+    }
+
     const [leftMode, rightMode] = modeTuples[scheduleIndex];
     setIsControlled((prevMode) => (prevMode ? rightMode : leftMode));
     //setMode((prevMode) => (prevMode === BLUE ? YELLOW : BLUE));
@@ -198,13 +218,16 @@ const Experiment = () => {
     logEvent("Mode Switched", {
       block: scheduleIndex,
       newMode: newMode,
+      timeLeft: timeLeft,
     });
   };
 
-  const generateNextInterval = useCallback(() => {
+  const generateNextInterval = useCallback((fixedTime = null) => {
     const currentRi = riIntervals[scheduleIndex];
-    const randomInterval = Math.floor(Math.random() * (currentRi * 2));
+    const randomInterval =  fixedTime ?? Math.floor(Math.random() * (currentRi * 2));
     setNextInterval(randomInterval);
+    //read time when interval starts
+    intervalStartTimeRef.current = Date.now();
 
     intervalRef.current = setTimeout(() => {
       if (isControlled || currentLosses < getMaxLosses()) {
@@ -219,7 +242,7 @@ const Experiment = () => {
       }, 100);
 
       intervalCountRef.current += 1; // Increment the interval count
-    }, randomInterval);
+    },randomInterval);
   });
 
   const getMaxLosses = () => {
@@ -232,6 +255,7 @@ const Experiment = () => {
 
   const handleBoxClick = () => {
     if (!isRunning) return;
+    if (isSwitchDisabled) setIsSwitchDisable(false);
     if (isControlled) {
       clearTimeout(intervalRef.current);
       generateNextInterval();
@@ -268,6 +292,7 @@ const Experiment = () => {
           label="SWITCH"
           className="switchButton"
           onClick={handleSwitch}
+          disabled={isSwitchDisabled}
         />
       </div>
     </div>
