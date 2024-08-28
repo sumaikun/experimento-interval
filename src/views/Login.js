@@ -5,10 +5,6 @@ import "./login.css";
 const Login = () => {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    localStorage.removeItem("persist:root");
-  }, []);
-
   const [formData, setFormData] = useState({
     fullName: "",
     gender: "",
@@ -26,7 +22,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("formData", formData);
-    navigate("/introduction", {
+    navigate("/consent", {
       state: { ...formData },
     });
   };

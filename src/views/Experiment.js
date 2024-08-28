@@ -15,6 +15,8 @@ const Experiment = () => {
   // Retrieve formData from location state
   const formData = location.state || {};
 
+  console.log(formData);
+
   function getRIntervals(logic) {
     let comp1RIntervals;
 

@@ -4,6 +4,7 @@ import Introduction from './views/Introduction';
 import Experiment from './views/Experiment';
 import Login from './views/Login';
 import Summary from './views/Summary';
+import  Consent from './views/Consent';
 import './App.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/introduction" element={<Introduction />} />
+        <Route path="/consent" element={<Consent />} />
         <Route path="/experiment" element={<Experiment />} />
         <Route path="/summary" element={<Summary />} />
       </Routes>
