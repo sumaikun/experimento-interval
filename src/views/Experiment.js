@@ -69,10 +69,10 @@ const Experiment = () => {
   const [riIntervals, setRiIntervals] = useState(
     getRIntervals(Number(formData.logic ?? 1))
   );
-  const initialPoints = 1300;
-  const blockTime = 20; // in seconds
-  //const blockCounts = [6, 10, 10, 10, 10, 10, 10, 10, 10, 10];
-  const blockCounts = [2, 2];
+  const initialPoints = 1400;
+  const blockTime = 10; // in seconds
+  const blockCounts = [6, 10, 10, 10, 10, 10, 10, 10, 10, 10];
+  //const blockCounts = [2, 2];
   const modeTuples = [
     [1, 1],
     [1, 1],
@@ -180,7 +180,7 @@ const Experiment = () => {
   const startBlockTimer = useCallback(() => {
     blockStartTimeRef.current = Date.now(); // Set block start time
     intervalCountRef.current = 0; // Reset interval count for the new block
-    logEvent("Schedule Start", { block: scheduleIndex });
+    logEvent("Schedule Start", { block: scheduleIndex, intervalType: riIntervals[scheduleIndex] });
     blockTimerRef.current = setInterval(() => {
       if ((Date.now() - endTimeRef.current) / 1000 > blockTime) {
         endTimeRef.current = Date.now();
@@ -235,9 +235,10 @@ const Experiment = () => {
       if (isControlled || currentLosses < getMaxLosses()) {
         setPoints((prevPoints) => prevPoints - 1);
         setCurrentLosses((prevLosses) => prevLosses + 1);
-        logEvent("Point Loss", { points: points - 1, losses: currentLosses });
+        logEvent("Point Loss", { points: points - 1, losses: currentLosses, controlled: isControlled });
       }
       setRed("red");
+      playErrorSound();
       generateNextInterval();
       setTimeout(() => {
         setRed("dark-red");
@@ -277,6 +278,25 @@ const Experiment = () => {
     link.click();
     document.body.removeChild(link);
   };
+
+  function playErrorSound() {
+    const context = new (window.AudioContext || window.webkitAudioContext)();
+    const oscillator = context.createOscillator();
+    const gainNode = context.createGain();
+  
+    oscillator.type = "square"; // You can change the type to "sine", "square", "sawtooth", or "triangle"
+    oscillator.frequency.setValueAtTime(300, context.currentTime); // Set frequency in hertz
+    oscillator.connect(gainNode);
+    gainNode.connect(context.destination);
+  
+    oscillator.start();
+  
+    // Stop the sound after 100 milliseconds
+    setTimeout(() => {
+      oscillator.stop();
+      context.close();
+    }, 100);
+  }
 
   return (
     <div className="app">
