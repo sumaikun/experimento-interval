@@ -6,10 +6,11 @@ import "./introduccion.css";
 const Summary = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { formData, jsonLog } = location.state || { formData: {}, jsonLog: {} };
+  const { formData, jsonLog, points } = location.state || { formData: {}, jsonLog: {} };
 
-  const points = formData.points || 0;
-  const moneyEarned = points * 100;
+  //console.log("location.state",location.state)
+
+  const moneyEarned = points * 10;
 
   function removeConsecutiveDuplicates(logs) {
     const result = [];
@@ -51,7 +52,7 @@ const Summary = () => {
 
     // Clear localStorage and navigate to login
     localStorage.clear();
-    navigate('/login');
+    navigate('/');
   };
 
   return (

@@ -15,8 +15,6 @@ const Experiment = () => {
   // Retrieve formData from location state
   const formData = location.state || {};
 
-  console.log(formData);
-
   function getRIntervals(logic) {
     let comp1RIntervals;
 
@@ -70,11 +68,11 @@ const Experiment = () => {
     getRIntervals(Number(formData.logic ?? 1))
   );
   const initialPoints = 1400;
-  const blockTime = 10; // in seconds
+  const blockTime = 2; // in seconds
   const blockCounts = [6, 10, 10, 10, 10, 10, 10, 10, 10, 10];
   //const blockCounts = [2, 2];
   const modeTuples = [
-    [1, 1],
+    [1, 0],
     [1, 1],
     [1, 0],
     [0, 1],
@@ -91,7 +89,7 @@ const Experiment = () => {
   const [isRunning, setIsRunning] = useState(false);
   const [currentBlockCount, setCurrentBlockCount] = useState(0);
   const [scheduleIndex, setScheduleIndex] = useState(0);
-  const [isControlled, setIsControlled] = useState(true);
+  const isControlled= useRef(1);
   const [buttonLabel, setButtonLabel] = useState("START");
   const [nextInterval, setNextInterval] = useState(0);
   const [losses, setLosses] = useState([]);
@@ -168,6 +166,7 @@ const Experiment = () => {
             state: {
               formData: formData,
               jsonLog: logEntriesRef.current,
+              points: points
             },
           });
         }, 2000);
@@ -213,9 +212,11 @@ const Experiment = () => {
     }
 
     const [leftMode, rightMode] = modeTuples[scheduleIndex];
-    setIsControlled((prevMode) => (prevMode ? rightMode : leftMode));
+    console.log(leftMode, rightMode);
+
     //setMode((prevMode) => (prevMode === BLUE ? YELLOW : BLUE));
     const newMode = mode === BLUE ? YELLOW : BLUE;
+    isControlled.ref = newMode === BLUE ? leftMode : rightMode ;
     setMode(newMode);
     logEvent("Mode Switched", {
       block: scheduleIndex,
@@ -232,10 +233,10 @@ const Experiment = () => {
     intervalStartTimeRef.current = Date.now();
 
     intervalRef.current = setTimeout(() => {
-      if (isControlled || currentLosses < getMaxLosses()) {
+      if (isControlled.ref || currentLosses < getMaxLosses()) {
         setPoints((prevPoints) => prevPoints - 1);
         setCurrentLosses((prevLosses) => prevLosses + 1);
-        logEvent("Point Loss", { points: points - 1, losses: currentLosses, controlled: isControlled });
+        logEvent("Point Loss", { points: points - 1, losses: currentLosses, controlled: isControlled.ref });
       }
       setRed("red");
       playErrorSound();
