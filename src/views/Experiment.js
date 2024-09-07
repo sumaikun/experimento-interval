@@ -84,7 +84,9 @@ const Experiment = () => {
     [0, 1],
   ];
 
-  const [points, setPoints] = useState(initialPoints);
+  const pointsRef = useRef(initialPoints);
+  const lossesRef = useRef([]);
+
   const [mode, setMode] = useState(BLUE);
   const [isRunning, setIsRunning] = useState(false);
   const [currentBlockCount, setCurrentBlockCount] = useState(0);
@@ -92,8 +94,7 @@ const Experiment = () => {
   const isControlled= useRef(1);
   const [buttonLabel, setButtonLabel] = useState("START");
   const [nextInterval, setNextInterval] = useState(0);
-  const [losses, setLosses] = useState([]);
-  const [currentLosses, setCurrentLosses] = useState(0);
+  const currentLossesRef = useRef(0);
   const [red, setRed] = useState("dark-red");
   const logEntriesRef = useRef([]);
 
@@ -137,8 +138,8 @@ const Experiment = () => {
     if (currentBlockCount === blockCounts[scheduleIndex]) {
       clearInterval(intervalRef.current);
       clearInterval(blockTimerRef.current);
-      setLosses((prevLosses) => [...prevLosses, currentLosses]);
-      setCurrentLosses(0);
+      lossesRef.current.push(currentLossesRef.current);
+      currentLossesRef.current = 0;
 
       logEvent("Schedule End", {
         block: scheduleIndex,
@@ -147,7 +148,7 @@ const Experiment = () => {
 
       if (scheduleIndex === 0) {
         alert("Tutorial finished. Score will be reset.");
-        setPoints(initialPoints); // Reset score after tutorial
+        pointsRef.current = (initialPoints); // Reset score after tutorial
         setScheduleIndex((prevIndex) => prevIndex + 1);
         setIsRunning(false);
         logEvent("Experiment End", { result: "Tutorial finished" });
@@ -166,7 +167,7 @@ const Experiment = () => {
             state: {
               formData: formData,
               jsonLog: logEntriesRef.current,
-              points: points
+              points: pointsRef.current
             },
           });
         }, 2000);
@@ -233,10 +234,10 @@ const Experiment = () => {
     intervalStartTimeRef.current = Date.now();
 
     intervalRef.current = setTimeout(() => {
-      if (isControlled.ref || currentLosses < getMaxLosses()) {
-        setPoints((prevPoints) => prevPoints - 1);
-        setCurrentLosses((prevLosses) => prevLosses + 1);
-        logEvent("Point Loss", { points: points - 1, losses: currentLosses, controlled: isControlled.ref });
+      if (isControlled.ref || currentLossesRef.current < getMaxLosses()) {
+        pointsRef.current -= 1;
+        currentLossesRef.current += 1;
+        logEvent("Point Loss", { points: pointsRef.current - 1, losses: currentLossesRef.current, controlled: isControlled.ref });
       }
       setRed("red");
       playErrorSound();
@@ -251,9 +252,9 @@ const Experiment = () => {
 
   const getMaxLosses = () => {
     if (scheduleIndex === 0) return Infinity; // No limit for the first schedule
-    if (scheduleIndex === 1) return losses[0] / 2; // Limit to losses in the first schedule
+    if (scheduleIndex === 1) return lossesRef.current[0] / 2; // Limit to losses in the first schedule
     return Math.floor(
-      losses.slice(0, scheduleIndex).reduce((a, b) => a + b, 0) / scheduleIndex
+      lossesRef.current.slice(0, scheduleIndex).reduce((a, b) => a + b, 0) / scheduleIndex
     ); // Average losses
   };
 
@@ -301,7 +302,7 @@ const Experiment = () => {
 
   return (
     <div className="app">
-      <Points points={points} />
+      <Points points={pointsRef.current} />
       <div className="boxes">
         <Box color={red} />
       </div>
