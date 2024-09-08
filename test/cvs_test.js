@@ -28,8 +28,10 @@ function jsonToCsv(data) {
         if (eventType === 'Mode Switched') {
             detail = `Switched to ${handleNull(entry.newMode)}`;
         } else if (eventType === 'Point Loss') {
-            detail = `Losses: ${handleNull(entry.losses)}`;
-        } else if (['Schedule Start', 'Schedule End'].includes(eventType)) {
+            detail = `Losses: ${handleNull(entry.losses)}, Controlled: ${handleNull(entry.controlled)}`;  // Added controlled
+        } else if (eventType === 'Schedule Start') {
+            detail = `Block: ${handleNull(entry.block)}, Intervals: ${handleNull(entry.intervalsGenerated)}, Interval Type: ${handleNull(entry.intervalType)}`; // Added intervalType
+        } else if (eventType === 'Schedule End') {
             detail = `Block: ${handleNull(entry.block)}, Intervals: ${handleNull(entry.intervalsGenerated)}`;
         } else if (eventType === 'Experiment End') {
             detail = `Result: ${handleNull(entry.result)}`;

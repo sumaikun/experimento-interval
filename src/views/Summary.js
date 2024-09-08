@@ -8,10 +8,9 @@ const Summary = () => {
   const location = useLocation();
   const { formData, jsonLog, points } = location.state || { formData: {}, jsonLog: {} };
 
-  //console.log("location.state",location.state)
-
   const moneyEarned = points * 10;
 
+  // Function to remove consecutive duplicate logs
   function removeConsecutiveDuplicates(logs) {
     const result = [];
   
@@ -27,28 +26,78 @@ const Summary = () => {
     return result;
   }
 
-  const handleFinish = () => {
+  function handleNull(value) {
+    return value === null || value === undefined ? '' : value;
+  }
 
-    const cleaned_log = removeConsecutiveDuplicates(jsonLog)
+  // Convert JSON to CSV
+  function jsonToCsv(logs) {
+    const headers = ['Type of Event', 'Seconds', 'Detail', 'Points'];
+    const csvRows = [];
+    
+    // Add the headers as the first row
+    csvRows.push(headers.join(','));
+    
+    // Map over the logs to format them as CSV
+    logs.forEach(log => {
+      const { eventType, elapsedTime, points, losses, block, intervalsGenerated, newMode, controlled, result, intervalType } = log;
+      let detail = '';
+
+      // Add specific details for different event types
+      if (eventType === 'Mode Switched') {
+        detail = `Switched to ${newMode}`;
+      } else if (eventType === 'Point Loss') {
+        detail = `Losses: ${losses}, Controlled: ${controlled}`;
+      } else if (eventType === 'Schedule Start') {
+        detail = `Block: ${block}, Interval Type: ${intervalType}, Intervals: ${intervalsGenerated}`;
+      } else if (eventType === 'Schedule End') {
+        detail = `Block: ${block}, Intervals: ${intervalsGenerated}`;
+      } else if (eventType === 'Experiment End') {
+        detail = `Result: ${handleNull(result)}`;
+      }
+
+      // Push each row into the CSV array
+      csvRows.push([eventType, elapsedTime, detail, points].join(','));
+    });
+
+    return csvRows.join('\n');
+  }
+
+  // Handle JSON and CSV download
+  const handleFinish = () => {
+    const cleanedLog = removeConsecutiveDuplicates(jsonLog);
+
+    // Download JSON file
     const summaryData = {
       ...formData,
-      cleaned_log,
+      cleanedLog,
       points,
       moneyEarned
     };
-
-    // Download summary data as JSON
-    const fileName = "experiment-summary.json";
+    const jsonFileName = "experiment-summary.json";
     const json = JSON.stringify(summaryData);
-    const blob = new Blob([json], { type: 'application/json' });
-    const href = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = href;
-    link.download = fileName;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    URL.revokeObjectURL(href);
+    const jsonBlob = new Blob([json], { type: 'application/json' });
+    const jsonHref = URL.createObjectURL(jsonBlob);
+    const jsonLink = document.createElement('a');
+    jsonLink.href = jsonHref;
+    jsonLink.download = jsonFileName;
+    document.body.appendChild(jsonLink);
+    jsonLink.click();
+    document.body.removeChild(jsonLink);
+    URL.revokeObjectURL(jsonHref);
+
+    // Convert cleaned log to CSV and download CSV
+    const csv = jsonToCsv(cleanedLog);
+    const csvFileName = "experiment-summary.csv";
+    const csvBlob = new Blob([csv], { type: 'text/csv' });
+    const csvHref = URL.createObjectURL(csvBlob);
+    const csvLink = document.createElement('a');
+    csvLink.href = csvHref;
+    csvLink.download = csvFileName;
+    document.body.appendChild(csvLink);
+    csvLink.click();
+    document.body.removeChild(csvLink);
+    URL.revokeObjectURL(csvHref);
 
     // Clear localStorage and navigate to login
     localStorage.clear();

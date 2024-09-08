@@ -84,9 +84,7 @@ const Experiment = () => {
     [0, 1],
   ];
 
-  const pointsRef = useRef(initialPoints);
-  const lossesRef = useRef([]);
-
+  const [points, setPoints] = useState(initialPoints);
   const [mode, setMode] = useState(BLUE);
   const [isRunning, setIsRunning] = useState(false);
   const [currentBlockCount, setCurrentBlockCount] = useState(0);
@@ -94,7 +92,8 @@ const Experiment = () => {
   const isControlled= useRef(1);
   const [buttonLabel, setButtonLabel] = useState("START");
   const [nextInterval, setNextInterval] = useState(0);
-  const currentLossesRef = useRef(0);
+  const [losses, setLosses] = useState([]);
+  const [currentLosses, setCurrentLosses] = useState(0);
   const [red, setRed] = useState("dark-red");
   const logEntriesRef = useRef([]);
 
@@ -105,6 +104,7 @@ const Experiment = () => {
   const intervalCountRef = useRef(0); // Track the number of intervals generated
   const intervalStartTimeRef = useRef(Date.now());
   const [isSwitchDisabled, setIsSwitchDisable] = useState(true);
+  const [logPointLoss, setLogPointLoss] = useState(false);
 
 
   const logEvent = (eventType, details = {}) => {
@@ -138,8 +138,8 @@ const Experiment = () => {
     if (currentBlockCount === blockCounts[scheduleIndex]) {
       clearInterval(intervalRef.current);
       clearInterval(blockTimerRef.current);
-      lossesRef.current.push(currentLossesRef.current);
-      currentLossesRef.current = 0;
+      setLosses((prevLosses) => [...prevLosses, currentLosses]);
+      setCurrentLosses(0);
 
       logEvent("Schedule End", {
         block: scheduleIndex,
@@ -148,7 +148,7 @@ const Experiment = () => {
 
       if (scheduleIndex === 0) {
         alert("Tutorial finished. Score will be reset.");
-        pointsRef.current = (initialPoints); // Reset score after tutorial
+        setPoints(initialPoints); // Reset score after tutorial
         setScheduleIndex((prevIndex) => prevIndex + 1);
         setIsRunning(false);
         logEvent("Experiment End", { result: "Tutorial finished" });
@@ -167,7 +167,7 @@ const Experiment = () => {
             state: {
               formData: formData,
               jsonLog: logEntriesRef.current,
-              points: pointsRef.current
+              points: points
             },
           });
         }, 2000);
@@ -226,6 +226,20 @@ const Experiment = () => {
     });
   };
 
+  useEffect(() => {
+    if (logPointLoss) {
+      // Log the event with updated state values
+      logEvent("Point Loss", { 
+        points, 
+        losses: currentLosses, 
+        controlled: isControlled.ref 
+      });
+  
+      // Reset the log flag
+      setLogPointLoss(false);
+    }
+  }, [points, currentLosses, logPointLoss]); 
+
   const generateNextInterval = useCallback((fixedTime = null) => {
     const currentRi = riIntervals[scheduleIndex];
     const randomInterval =  fixedTime ?? Math.floor(Math.random() * (currentRi * 2));
@@ -234,10 +248,11 @@ const Experiment = () => {
     intervalStartTimeRef.current = Date.now();
 
     intervalRef.current = setTimeout(() => {
-      if (isControlled.ref || currentLossesRef.current < getMaxLosses()) {
-        pointsRef.current -= 1;
-        currentLossesRef.current += 1;
-        logEvent("Point Loss", { points: pointsRef.current - 1, losses: currentLossesRef.current, controlled: isControlled.ref });
+      if (isControlled.ref || currentLosses < getMaxLosses()) {
+        setPoints((prevPoints) => prevPoints - 1);
+        setCurrentLosses((prevLosses) => prevLosses + 1);
+        //logEvent("Point Loss", { points: points - 1, losses: currentLosses + 1, controlled: isControlled.ref });
+        setLogPointLoss(true);
       }
       setRed("red");
       playErrorSound();
@@ -252,9 +267,9 @@ const Experiment = () => {
 
   const getMaxLosses = () => {
     if (scheduleIndex === 0) return Infinity; // No limit for the first schedule
-    if (scheduleIndex === 1) return lossesRef.current[0] / 2; // Limit to losses in the first schedule
+    if (scheduleIndex === 1) return losses[0] / 2; // Limit to losses in the first schedule
     return Math.floor(
-      lossesRef.current.slice(0, scheduleIndex).reduce((a, b) => a + b, 0) / scheduleIndex
+      losses.slice(0, scheduleIndex).reduce((a, b) => a + b, 0) / scheduleIndex
     ); // Average losses
   };
 
@@ -302,7 +317,7 @@ const Experiment = () => {
 
   return (
     <div className="app">
-      <Points points={pointsRef.current} />
+      <Points points={points} />
       <div className="boxes">
         <Box color={red} />
       </div>
