@@ -1,2002 +1,4725 @@
 [
   {
     "eventType": "Experiment Start",
-    "timestamp": "2024-08-04T22:49:56.443Z",
+    "timestamp": "2024-09-12T22:34:01.757Z",
     "elapsedTime": "0.00"
   },
   {
     "eventType": "Schedule Start",
-    "timestamp": "2024-08-04T22:49:56.446Z",
+    "timestamp": "2024-09-12T22:34:01.758Z",
     "elapsedTime": "0.00",
-    "block": 0
+    "block": 0,
+    "intervalType": 700,
+    "maxLosses": 0
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:49:56.650Z",
-    "elapsedTime": "0.20",
-    "points": 1299,
-    "losses": 0
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:56.927Z",
-    "elapsedTime": "0.48"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:57.117Z",
-    "elapsedTime": "0.67"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:57.318Z",
-    "elapsedTime": "0.87"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:57.569Z",
-    "elapsedTime": "1.12"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:57.807Z",
-    "elapsedTime": "1.36"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:58.052Z",
-    "elapsedTime": "1.61"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:49:58.091Z",
-    "elapsedTime": "1.65",
-    "points": 1298,
+    "timestamp": "2024-09-12T22:34:02.184Z",
+    "elapsedTime": "0.43",
+    "points": 1399,
     "losses": 1
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:58.276Z",
-    "elapsedTime": "1.83"
+    "timestamp": "2024-09-12T22:34:02.618Z",
+    "elapsedTime": "0.86"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:58.523Z",
-    "elapsedTime": "2.08"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:58.762Z",
-    "elapsedTime": "2.32"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:59.016Z",
-    "elapsedTime": "2.57"
+    "timestamp": "2024-09-12T22:34:02.888Z",
+    "elapsedTime": "1.13"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:49:59.366Z",
-    "elapsedTime": "2.92",
-    "points": 1297,
+    "timestamp": "2024-09-12T22:34:03.013Z",
+    "elapsedTime": "1.25",
+    "points": 1398,
     "losses": 2
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:59.708Z",
-    "elapsedTime": "3.26"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:49:59.782Z",
-    "elapsedTime": "3.34"
-  },
-  {
-    "eventType": "Mode Switched",
-    "timestamp": "2024-08-04T22:50:00.491Z",
-    "elapsedTime": "4.04",
-    "block": 0,
-    "newMode": "yellow"
+    "timestamp": "2024-09-12T22:34:03.105Z",
+    "elapsedTime": "1.35"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:00.964Z",
-    "elapsedTime": "4.52",
-    "points": 1296,
+    "timestamp": "2024-09-12T22:34:03.215Z",
+    "elapsedTime": "1.46",
+    "points": 1397,
     "losses": 3
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:01.041Z",
-    "elapsedTime": "4.59"
+    "timestamp": "2024-09-12T22:34:03.326Z",
+    "elapsedTime": "1.57"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:01.337Z",
-    "elapsedTime": "4.89"
+    "timestamp": "2024-09-12T22:34:03.534Z",
+    "elapsedTime": "1.78"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:01.582Z",
-    "elapsedTime": "5.14"
+    "timestamp": "2024-09-12T22:34:03.731Z",
+    "elapsedTime": "1.97"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:01.841Z",
-    "elapsedTime": "5.39"
+    "timestamp": "2024-09-12T22:34:03.922Z",
+    "elapsedTime": "2.16"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:02.090Z",
-    "elapsedTime": "5.64"
+    "timestamp": "2024-09-12T22:34:04.138Z",
+    "elapsedTime": "2.38"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:02.362Z",
-    "elapsedTime": "5.92"
+    "timestamp": "2024-09-12T22:34:04.356Z",
+    "elapsedTime": "2.60"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:04.568Z",
+    "elapsedTime": "2.81"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:04.771Z",
+    "elapsedTime": "3.01"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:05.007Z",
+    "elapsedTime": "3.25"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:05.227Z",
+    "elapsedTime": "3.47"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:05.466Z",
+    "elapsedTime": "3.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:05.701Z",
+    "elapsedTime": "3.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:05.952Z",
+    "elapsedTime": "4.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:06.185Z",
+    "elapsedTime": "4.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:06.422Z",
+    "elapsedTime": "4.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:06.681Z",
+    "elapsedTime": "4.92"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:02.442Z",
-    "elapsedTime": "6.00",
-    "points": 1295,
+    "timestamp": "2024-09-12T22:34:06.854Z",
+    "elapsedTime": "5.10",
+    "points": 1396,
     "losses": 4
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:02.617Z",
-    "elapsedTime": "6.17"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:02.624Z",
-    "elapsedTime": "6.18",
-    "points": 1294,
-    "losses": 5
+    "timestamp": "2024-09-12T22:34:06.938Z",
+    "elapsedTime": "5.18"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:02.887Z",
-    "elapsedTime": "6.44"
+    "timestamp": "2024-09-12T22:34:07.207Z",
+    "elapsedTime": "5.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:07.468Z",
+    "elapsedTime": "5.71"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:02.923Z",
-    "elapsedTime": "6.48",
-    "points": 1293,
+    "timestamp": "2024-09-12T22:34:07.519Z",
+    "elapsedTime": "5.76",
+    "points": 1395,
+    "losses": 5
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:34:07.565Z",
+    "elapsedTime": "5.81",
+    "points": 1394,
     "losses": 6
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:03.125Z",
-    "elapsedTime": "6.68"
+    "timestamp": "2024-09-12T22:34:07.721Z",
+    "elapsedTime": "5.96"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:03.385Z",
-    "elapsedTime": "6.94"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:03.642Z",
-    "elapsedTime": "7.20"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:03.900Z",
-    "elapsedTime": "7.45"
+    "timestamp": "2024-09-12T22:34:07.983Z",
+    "elapsedTime": "6.22"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:04.049Z",
-    "elapsedTime": "7.60",
-    "points": 1292,
+    "timestamp": "2024-09-12T22:34:08.170Z",
+    "elapsedTime": "6.41",
+    "points": 1393,
     "losses": 7
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:04.182Z",
-    "elapsedTime": "7.74"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:04.430Z",
-    "elapsedTime": "7.98"
+    "timestamp": "2024-09-12T22:34:08.253Z",
+    "elapsedTime": "6.50"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:04.929Z",
-    "elapsedTime": "8.48",
-    "points": 1291,
+    "timestamp": "2024-09-12T22:34:08.353Z",
+    "elapsedTime": "6.59",
+    "points": 1392,
     "losses": 8
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:04.937Z",
-    "elapsedTime": "8.49"
+    "timestamp": "2024-09-12T22:34:08.513Z",
+    "elapsedTime": "6.75"
   },
   {
-    "eventType": "Mode Switched",
-    "timestamp": "2024-08-04T22:50:05.859Z",
-    "elapsedTime": "9.41",
-    "block": 0,
-    "newMode": "blue"
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:08.712Z",
+    "elapsedTime": "6.95"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:05.943Z",
-    "elapsedTime": "9.50",
-    "points": 1290,
+    "timestamp": "2024-09-12T22:34:09.870Z",
+    "elapsedTime": "8.11",
+    "points": 1391,
     "losses": 9
   },
   {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:06.195Z",
-    "elapsedTime": "9.75"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:06.481Z",
-    "elapsedTime": "10.04"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:06.737Z",
-    "elapsedTime": "10.29"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:07.031Z",
-    "elapsedTime": "10.59"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:07.289Z",
-    "elapsedTime": "10.84"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:07.559Z",
-    "elapsedTime": "11.11"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:07.828Z",
-    "elapsedTime": "11.38"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:08.088Z",
-    "elapsedTime": "11.64"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:08.366Z",
-    "elapsedTime": "11.92"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:08.648Z",
-    "elapsedTime": "12.20"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:08.942Z",
-    "elapsedTime": "12.50"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:09.216Z",
-    "elapsedTime": "12.77"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:09.507Z",
-    "elapsedTime": "13.06"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:09.790Z",
-    "elapsedTime": "13.34"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:10.055Z",
-    "elapsedTime": "13.61"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:10.361Z",
-    "elapsedTime": "13.91"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:10.643Z",
-    "elapsedTime": "14.20"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:10.922Z",
-    "elapsedTime": "14.48"
-  },
-  {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:11.176Z",
-    "elapsedTime": "14.73",
-    "points": 1289,
+    "timestamp": "2024-09-12T22:34:10.278Z",
+    "elapsedTime": "8.52",
+    "points": 1390,
     "losses": 10
   },
   {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:11.212Z",
-    "elapsedTime": "14.77"
-  },
-  {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:11.358Z",
-    "elapsedTime": "14.91",
-    "points": 1288,
+    "timestamp": "2024-09-12T22:34:10.939Z",
+    "elapsedTime": "9.18",
+    "points": 1389,
     "losses": 11
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:11.360Z",
-    "elapsedTime": "14.91",
-    "points": 1288,
-    "losses": 11
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:11.507Z",
-    "elapsedTime": "15.06"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:11.776Z",
-    "elapsedTime": "15.33"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:12.387Z",
-    "elapsedTime": "15.94"
+    "timestamp": "2024-09-12T22:34:12.013Z",
+    "elapsedTime": "10.26",
+    "points": 1388,
+    "losses": 12
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:12.632Z",
-    "elapsedTime": "16.19",
-    "points": 1286,
+    "timestamp": "2024-09-12T22:34:12.093Z",
+    "elapsedTime": "10.34",
+    "points": 1387,
     "losses": 13
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:12.721Z",
-    "elapsedTime": "16.27"
+    "timestamp": "2024-09-12T22:34:12.366Z",
+    "elapsedTime": "10.61"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:12.562Z",
+    "elapsedTime": "10.80"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:12.762Z",
+    "elapsedTime": "11.00"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:12.955Z",
+    "elapsedTime": "11.20"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:13.142Z",
+    "elapsedTime": "11.38"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:13.331Z",
+    "elapsedTime": "11.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:13.498Z",
+    "elapsedTime": "11.74"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:13.669Z",
+    "elapsedTime": "11.91"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:12.874Z",
-    "elapsedTime": "16.43",
-    "points": 1285,
+    "timestamp": "2024-09-12T22:34:14.604Z",
+    "elapsedTime": "12.85",
+    "points": 1386,
     "losses": 14
   },
   {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:12.991Z",
-    "elapsedTime": "16.55"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:13.284Z",
-    "elapsedTime": "16.84"
-  },
-  {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:13.496Z",
-    "elapsedTime": "17.05",
-    "points": 1284,
+    "timestamp": "2024-09-12T22:34:15.791Z",
+    "elapsedTime": "14.03",
+    "points": 1385,
     "losses": 15
   },
   {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:13.574Z",
-    "elapsedTime": "17.13"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:13.836Z",
-    "elapsedTime": "17.39"
-  },
-  {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:14.120Z",
-    "elapsedTime": "17.67",
-    "points": 1283,
-    "losses": 16
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:14.368Z",
-    "elapsedTime": "17.92",
-    "points": 1283,
+    "timestamp": "2024-09-12T22:34:16.177Z",
+    "elapsedTime": "14.42",
+    "points": 1384,
     "losses": 16
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:14.433Z",
-    "elapsedTime": "17.99"
+    "timestamp": "2024-09-12T22:34:16.202Z",
+    "elapsedTime": "14.44"
   },
   {
-    "eventType": "Mode Switched",
-    "timestamp": "2024-08-04T22:50:15.228Z",
-    "elapsedTime": "18.78",
-    "block": 0,
-    "newMode": "yellow"
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:16.451Z",
+    "elapsedTime": "14.69"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:16.665Z",
+    "elapsedTime": "14.91"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:16.886Z",
+    "elapsedTime": "15.13"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:15.764Z",
-    "elapsedTime": "19.32",
-    "points": 1281,
+    "timestamp": "2024-09-12T22:34:17.864Z",
+    "elapsedTime": "16.11",
+    "points": 1383,
+    "losses": 17
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:34:18.078Z",
+    "elapsedTime": "16.32",
+    "points": 1382,
     "losses": 18
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:16.189Z",
-    "elapsedTime": "19.74"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:16.499Z",
-    "elapsedTime": "20.05",
-    "points": 1280,
-    "losses": 19
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:16.503Z",
-    "elapsedTime": "20.06"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:17.146Z",
-    "elapsedTime": "20.70"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:17.445Z",
-    "elapsedTime": "21.00"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:17.730Z",
-    "elapsedTime": "21.28"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:17.988Z",
-    "elapsedTime": "21.54"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:17.996Z",
-    "elapsedTime": "21.55",
-    "points": 1279,
-    "losses": 20
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:18.303Z",
-    "elapsedTime": "21.86"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:18.457Z",
-    "elapsedTime": "22.01",
-    "points": 1278,
-    "losses": 21
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:18.595Z",
-    "elapsedTime": "22.15"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:18.820Z",
-    "elapsedTime": "22.37"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:18.845Z",
-    "elapsedTime": "22.40",
-    "points": 1277,
-    "losses": 22
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:19.167Z",
-    "elapsedTime": "22.72"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:19.311Z",
-    "elapsedTime": "22.86"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:19.452Z",
-    "elapsedTime": "23.01"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:19.563Z",
-    "elapsedTime": "23.12"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:19.684Z",
-    "elapsedTime": "23.24"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:19.794Z",
-    "elapsedTime": "23.35"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:19.907Z",
-    "elapsedTime": "23.46"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:20.032Z",
-    "elapsedTime": "23.59"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:20.145Z",
-    "elapsedTime": "23.70"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:20.257Z",
-    "elapsedTime": "23.81"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:20.371Z",
-    "elapsedTime": "23.93"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:20.486Z",
-    "elapsedTime": "24.04",
-    "points": 1276,
-    "losses": 23
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:20.491Z",
-    "elapsedTime": "24.05"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:20.628Z",
-    "elapsedTime": "24.18"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:20.740Z",
-    "elapsedTime": "24.29"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:20.956Z",
-    "elapsedTime": "24.51"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:21.093Z",
-    "elapsedTime": "24.65"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:21.225Z",
-    "elapsedTime": "24.78"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:21.336Z",
-    "elapsedTime": "24.89"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:21.945Z",
-    "elapsedTime": "25.50",
-    "points": 1275,
-    "losses": 24
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:21.972Z",
-    "elapsedTime": "25.53"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:22.362Z",
-    "elapsedTime": "25.92"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:22.726Z",
-    "elapsedTime": "26.28"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:23.041Z",
-    "elapsedTime": "26.59"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:23.141Z",
-    "elapsedTime": "26.70",
-    "points": 1274,
-    "losses": 25
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:23.356Z",
-    "elapsedTime": "26.91"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:23.692Z",
-    "elapsedTime": "27.25"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:23.787Z",
-    "elapsedTime": "27.34",
-    "points": 1273,
-    "losses": 26
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:23.822Z",
-    "elapsedTime": "27.38",
-    "points": 1273,
-    "losses": 26
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:23.971Z",
-    "elapsedTime": "27.52"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:24.254Z",
-    "elapsedTime": "27.81"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:24.570Z",
-    "elapsedTime": "28.12"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:24.806Z",
-    "elapsedTime": "28.36"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:24.951Z",
-    "elapsedTime": "28.50",
-    "points": 1271,
-    "losses": 28
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:25.075Z",
-    "elapsedTime": "28.63"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:25.538Z",
-    "elapsedTime": "29.09"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:25.682Z",
-    "elapsedTime": "29.24"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:25.769Z",
-    "elapsedTime": "29.32"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:25.832Z",
-    "elapsedTime": "29.39",
-    "points": 1270,
-    "losses": 29
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:25.907Z",
-    "elapsedTime": "29.46"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:26.028Z",
-    "elapsedTime": "29.58"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:26.153Z",
-    "elapsedTime": "29.71"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:26.278Z",
-    "elapsedTime": "29.83"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:26.400Z",
-    "elapsedTime": "29.95"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:26.536Z",
-    "elapsedTime": "30.09"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:26.657Z",
-    "elapsedTime": "30.21"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:26.782Z",
-    "elapsedTime": "30.34"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:26.908Z",
-    "elapsedTime": "30.46"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:27.040Z",
-    "elapsedTime": "30.59"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:27.180Z",
-    "elapsedTime": "30.73"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:27.299Z",
-    "elapsedTime": "30.85"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:27.452Z",
-    "elapsedTime": "31.01"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:27.557Z",
-    "elapsedTime": "31.11"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:27.684Z",
-    "elapsedTime": "31.24"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:27.820Z",
-    "elapsedTime": "31.37"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:28.285Z",
-    "elapsedTime": "31.84",
-    "points": 1269,
-    "losses": 30
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:28.421Z",
-    "elapsedTime": "31.98",
-    "points": 1269,
-    "losses": 30
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:28.538Z",
-    "elapsedTime": "32.09"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:28.935Z",
-    "elapsedTime": "32.49"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:29.250Z",
-    "elapsedTime": "32.80"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:29.576Z",
-    "elapsedTime": "33.13"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:29.870Z",
-    "elapsedTime": "33.42"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:30.219Z",
-    "elapsedTime": "33.77"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:30.531Z",
-    "elapsedTime": "34.09",
-    "points": 1267,
-    "losses": 32
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:30.541Z",
-    "elapsedTime": "34.09"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:30.808Z",
-    "elapsedTime": "34.36",
-    "points": 1266,
-    "losses": 33
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:30.858Z",
-    "elapsedTime": "34.41"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:31.077Z",
-    "elapsedTime": "34.63",
-    "points": 1265,
-    "losses": 34
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:31.199Z",
-    "elapsedTime": "34.75"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:31.501Z",
-    "elapsedTime": "35.05"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:31.837Z",
-    "elapsedTime": "35.39"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:32.160Z",
-    "elapsedTime": "35.71"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:32.521Z",
-    "elapsedTime": "36.08"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:32.751Z",
-    "elapsedTime": "36.30",
-    "points": 1264,
-    "losses": 35
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:32.844Z",
-    "elapsedTime": "36.40"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:33.208Z",
-    "elapsedTime": "36.76"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:33.566Z",
-    "elapsedTime": "37.12"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:33.932Z",
-    "elapsedTime": "37.49"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:34.162Z",
-    "elapsedTime": "37.72",
-    "points": 1263,
-    "losses": 36
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:34.286Z",
-    "elapsedTime": "37.84"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:34.653Z",
-    "elapsedTime": "38.21"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:34.998Z",
-    "elapsedTime": "38.55"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:35.090Z",
-    "elapsedTime": "38.64",
-    "points": 1262,
-    "losses": 37
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:35.368Z",
-    "elapsedTime": "38.92"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:35.765Z",
-    "elapsedTime": "39.32"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:36.182Z",
-    "elapsedTime": "39.74"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:36.697Z",
-    "elapsedTime": "40.25"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:36.843Z",
-    "elapsedTime": "40.40",
-    "points": 1261,
-    "losses": 38
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:37.170Z",
-    "elapsedTime": "40.72"
+    "timestamp": "2024-09-12T22:34:18.520Z",
+    "elapsedTime": "16.76"
   },
   {
     "eventType": "Schedule End",
-    "timestamp": "2024-08-04T22:50:37.450Z",
-    "elapsedTime": "41.00",
+    "timestamp": "2024-09-12T22:34:18.751Z",
+    "elapsedTime": "16.99",
     "block": 0,
-    "intervalsGenerated": 39
+    "intervalsGenerated": 18
   },
   {
     "eventType": "Experiment End",
-    "timestamp": "2024-08-04T22:50:39.145Z",
-    "elapsedTime": "42.70",
+    "timestamp": "2024-09-12T22:34:20.799Z",
+    "elapsedTime": "19.04",
     "result": "Tutorial finished"
   },
   {
     "eventType": "Experiment Start",
-    "timestamp": "2024-08-04T22:50:39.788Z",
+    "timestamp": "2024-09-12T22:34:21.968Z",
     "elapsedTime": "0.00"
   },
   {
     "eventType": "Schedule Start",
-    "timestamp": "2024-08-04T22:50:39.789Z",
+    "timestamp": "2024-09-12T22:34:21.969Z",
     "elapsedTime": "0.00",
-    "block": 1
+    "block": 1,
+    "intervalType": 4000,
+    "maxLosses": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:25.494Z",
+    "elapsedTime": "3.52"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:26.280Z",
+    "elapsedTime": "4.31"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:26.768Z",
+    "elapsedTime": "4.80"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:34:28.187Z",
+    "elapsedTime": "6.22",
+    "block": 1,
+    "newMode": "yellow",
+    "timeLeft": 3455
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:28.690Z",
+    "elapsedTime": "6.72"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:28.928Z",
+    "elapsedTime": "6.96"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:33.673Z",
+    "elapsedTime": "11.70"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:33.911Z",
+    "elapsedTime": "11.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:34.175Z",
+    "elapsedTime": "12.21"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:34.375Z",
+    "elapsedTime": "12.41"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:40.214Z",
-    "elapsedTime": "0.42",
-    "points": 1299,
-    "losses": 0
+    "timestamp": "2024-09-12T22:34:36.484Z",
+    "elapsedTime": "14.52",
+    "points": 1399,
+    "losses": 1,
+    "controlled": 1
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:40.727Z",
-    "elapsedTime": "0.94"
+    "timestamp": "2024-09-12T22:34:40.143Z",
+    "elapsedTime": "18.17"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:40.756Z",
-    "elapsedTime": "0.97",
-    "points": 1298,
-    "losses": 1
+    "timestamp": "2024-09-12T22:34:40.206Z",
+    "elapsedTime": "18.24",
+    "points": 1398,
+    "losses": 2,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:40.438Z",
+    "elapsedTime": "18.47"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:40.717Z",
+    "elapsedTime": "18.75"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:41.013Z",
+    "elapsedTime": "19.04"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:41.287Z",
+    "elapsedTime": "19.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:41.818Z",
+    "elapsedTime": "19.85"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:42.084Z",
+    "elapsedTime": "20.11"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:42.328Z",
+    "elapsedTime": "20.36"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:42.591Z",
+    "elapsedTime": "20.62"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:42.863Z",
+    "elapsedTime": "20.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:43.151Z",
+    "elapsedTime": "21.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:43.426Z",
+    "elapsedTime": "21.46"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:43.701Z",
+    "elapsedTime": "21.73"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:43.969Z",
+    "elapsedTime": "22.00"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:44.244Z",
+    "elapsedTime": "22.27"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:44.513Z",
+    "elapsedTime": "22.54"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:44.816Z",
+    "elapsedTime": "22.85"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:45.097Z",
+    "elapsedTime": "23.13"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:45.388Z",
+    "elapsedTime": "23.42"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:45.647Z",
+    "elapsedTime": "23.68"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:45.932Z",
+    "elapsedTime": "23.96"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:46.413Z",
+    "elapsedTime": "24.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:34:46.690Z",
+    "elapsedTime": "24.72"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:41.397Z",
-    "elapsedTime": "1.61",
-    "points": 1298,
-    "losses": 1
+    "timestamp": "2024-09-12T22:34:50.700Z",
+    "elapsedTime": "28.73",
+    "points": 1397,
+    "losses": 3,
+    "controlled": 1
   },
   {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:41.843Z",
-    "elapsedTime": "2.05",
-    "points": 1298,
-    "losses": 1
+    "eventType": "Schedule End",
+    "timestamp": "2024-09-12T22:34:50.965Z",
+    "elapsedTime": "29.00",
+    "block": 1,
+    "intervalsGenerated": 3
   },
   {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:42.096Z",
-    "elapsedTime": "2.31"
+    "eventType": "Break End",
+    "timestamp": "2024-09-12T22:35:16.269Z",
+    "elapsedTime": "54.30",
+    "result": "Break time"
   },
   {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:42.514Z",
-    "elapsedTime": "2.73"
+    "eventType": "Experiment Start",
+    "timestamp": "2024-09-12T22:35:16.683Z",
+    "elapsedTime": "0.00"
   },
   {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:42.705Z",
-    "elapsedTime": "2.92"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:42.844Z",
-    "elapsedTime": "3.06"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:43.009Z",
-    "elapsedTime": "3.22"
+    "eventType": "Schedule Start",
+    "timestamp": "2024-09-12T22:35:16.684Z",
+    "elapsedTime": "0.00",
+    "block": 2,
+    "intervalType": 4000,
+    "maxLosses": 10
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:43.399Z",
-    "elapsedTime": "3.61"
+    "timestamp": "2024-09-12T22:35:17.090Z",
+    "elapsedTime": "0.41"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:43.590Z",
-    "elapsedTime": "3.80"
+    "timestamp": "2024-09-12T22:35:17.341Z",
+    "elapsedTime": "0.66"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:43.738Z",
-    "elapsedTime": "3.95"
+    "timestamp": "2024-09-12T22:35:17.641Z",
+    "elapsedTime": "0.96"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:43.905Z",
-    "elapsedTime": "4.12"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:43.979Z",
-    "elapsedTime": "4.19",
-    "points": 1295,
-    "losses": 4
+    "timestamp": "2024-09-12T22:35:17.886Z",
+    "elapsedTime": "1.20"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:44.380Z",
-    "elapsedTime": "4.59"
+    "timestamp": "2024-09-12T22:35:18.162Z",
+    "elapsedTime": "1.48"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:44.558Z",
-    "elapsedTime": "4.77"
+    "timestamp": "2024-09-12T22:35:18.409Z",
+    "elapsedTime": "1.73"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:44.705Z",
-    "elapsedTime": "4.92"
+    "timestamp": "2024-09-12T22:35:18.676Z",
+    "elapsedTime": "1.99"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:44.869Z",
+    "timestamp": "2024-09-12T22:35:18.941Z",
+    "elapsedTime": "2.26"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:19.201Z",
+    "elapsedTime": "2.52"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:19.453Z",
+    "elapsedTime": "2.77"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:35:20.361Z",
+    "elapsedTime": "3.68",
+    "block": 2,
+    "newMode": "blue",
+    "timeLeft": 5571
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:20.698Z",
+    "elapsedTime": "4.01"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:20.931Z",
+    "elapsedTime": "4.25"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:21.135Z",
+    "elapsedTime": "4.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:21.343Z",
+    "elapsedTime": "4.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:21.538Z",
+    "elapsedTime": "4.85"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:21.762Z",
     "elapsedTime": "5.08"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:45.357Z",
-    "elapsedTime": "5.57"
+    "timestamp": "2024-09-12T22:35:21.977Z",
+    "elapsedTime": "5.29"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:45.511Z",
-    "elapsedTime": "5.72"
+    "timestamp": "2024-09-12T22:35:22.219Z",
+    "elapsedTime": "5.54"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:45.663Z",
-    "elapsedTime": "5.87"
+    "timestamp": "2024-09-12T22:35:22.611Z",
+    "elapsedTime": "5.93"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:45.820Z",
-    "elapsedTime": "6.03"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:45.989Z",
-    "elapsedTime": "6.20",
-    "points": 1294,
-    "losses": 5
+    "timestamp": "2024-09-12T22:35:23.213Z",
+    "elapsedTime": "6.53"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:46.291Z",
-    "elapsedTime": "6.50"
+    "timestamp": "2024-09-12T22:35:23.371Z",
+    "elapsedTime": "6.69"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:46.446Z",
-    "elapsedTime": "6.66"
+    "timestamp": "2024-09-12T22:35:23.505Z",
+    "elapsedTime": "6.82"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:46.632Z",
-    "elapsedTime": "6.84"
+    "timestamp": "2024-09-12T22:35:23.653Z",
+    "elapsedTime": "6.97"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:46.795Z",
-    "elapsedTime": "7.01"
+    "timestamp": "2024-09-12T22:35:23.787Z",
+    "elapsedTime": "7.10"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:35:24.456Z",
+    "elapsedTime": "7.77",
+    "block": 2,
+    "newMode": "yellow",
+    "timeLeft": 6342
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:47.178Z",
-    "elapsedTime": "7.39"
+    "timestamp": "2024-09-12T22:35:24.939Z",
+    "elapsedTime": "8.26"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:47.370Z",
-    "elapsedTime": "7.58"
+    "timestamp": "2024-09-12T22:35:25.092Z",
+    "elapsedTime": "8.41"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:47.564Z",
-    "elapsedTime": "7.78"
+    "timestamp": "2024-09-12T22:35:25.411Z",
+    "elapsedTime": "8.73"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:47.723Z",
-    "elapsedTime": "7.93"
+    "timestamp": "2024-09-12T22:35:25.701Z",
+    "elapsedTime": "9.02"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:48.083Z",
-    "elapsedTime": "8.29"
+    "timestamp": "2024-09-12T22:35:25.858Z",
+    "elapsedTime": "9.17"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:48.264Z",
-    "elapsedTime": "8.47"
+    "timestamp": "2024-09-12T22:35:26.164Z",
+    "elapsedTime": "9.48"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:48.394Z",
-    "elapsedTime": "8.61"
+    "timestamp": "2024-09-12T22:35:26.770Z",
+    "elapsedTime": "10.09"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:48.564Z",
-    "elapsedTime": "8.78"
+    "timestamp": "2024-09-12T22:35:27.389Z",
+    "elapsedTime": "10.71"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:48.815Z",
-    "elapsedTime": "9.03"
+    "timestamp": "2024-09-12T22:35:27.835Z",
+    "elapsedTime": "11.15"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:48.978Z",
-    "elapsedTime": "9.19"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:49.004Z",
-    "elapsedTime": "9.21",
-    "points": 1293,
-    "losses": 6
+    "timestamp": "2024-09-12T22:35:28.222Z",
+    "elapsedTime": "11.54"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:49.205Z",
-    "elapsedTime": "9.42"
+    "timestamp": "2024-09-12T22:35:28.637Z",
+    "elapsedTime": "11.95"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:49.348Z",
-    "elapsedTime": "9.56"
+    "timestamp": "2024-09-12T22:35:28.983Z",
+    "elapsedTime": "12.30"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:49.846Z",
-    "elapsedTime": "10.06"
+    "timestamp": "2024-09-12T22:35:29.214Z",
+    "elapsedTime": "12.53"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:50.264Z",
-    "elapsedTime": "10.47"
+    "timestamp": "2024-09-12T22:35:29.382Z",
+    "elapsedTime": "12.70"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:50.386Z",
-    "elapsedTime": "10.60"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:50.702Z",
-    "elapsedTime": "10.91"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:50.871Z",
-    "elapsedTime": "11.08"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:50.994Z",
-    "elapsedTime": "11.21"
+    "timestamp": "2024-09-12T22:35:29.651Z",
+    "elapsedTime": "12.97"
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:51.103Z",
-    "elapsedTime": "11.31",
-    "points": 1292,
-    "losses": 7
+    "timestamp": "2024-09-12T22:35:29.804Z",
+    "elapsedTime": "13.12",
+    "points": 1396,
+    "losses": 1,
+    "controlled": 0
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:51.289Z",
-    "elapsedTime": "11.50"
+    "timestamp": "2024-09-12T22:35:29.830Z",
+    "elapsedTime": "13.15"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:51.790Z",
-    "elapsedTime": "12.00"
+    "timestamp": "2024-09-12T22:35:30.293Z",
+    "elapsedTime": "13.61"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:51.928Z",
-    "elapsedTime": "12.14"
+    "timestamp": "2024-09-12T22:35:30.564Z",
+    "elapsedTime": "13.88"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:52.065Z",
-    "elapsedTime": "12.28"
+    "timestamp": "2024-09-12T22:35:30.745Z",
+    "elapsedTime": "14.06"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:52.202Z",
-    "elapsedTime": "12.41"
+    "timestamp": "2024-09-12T22:35:31.047Z",
+    "elapsedTime": "14.36"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:52.348Z",
-    "elapsedTime": "12.56"
+    "timestamp": "2024-09-12T22:35:31.329Z",
+    "elapsedTime": "14.64"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:52.495Z",
-    "elapsedTime": "12.71"
+    "timestamp": "2024-09-12T22:35:31.597Z",
+    "elapsedTime": "14.91"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:52.651Z",
-    "elapsedTime": "12.86"
+    "timestamp": "2024-09-12T22:35:31.779Z",
+    "elapsedTime": "15.10"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:52.801Z",
-    "elapsedTime": "13.01"
+    "timestamp": "2024-09-12T22:35:32.022Z",
+    "elapsedTime": "15.34"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:52.945Z",
-    "elapsedTime": "13.16"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:52.950Z",
-    "elapsedTime": "13.16",
-    "points": 1291,
-    "losses": 8
+    "timestamp": "2024-09-12T22:35:32.306Z",
+    "elapsedTime": "15.62"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:53.107Z",
-    "elapsedTime": "13.32"
+    "timestamp": "2024-09-12T22:35:32.464Z",
+    "elapsedTime": "15.78"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:53.520Z",
-    "elapsedTime": "13.73"
+    "timestamp": "2024-09-12T22:35:32.625Z",
+    "elapsedTime": "15.94"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:53.678Z",
-    "elapsedTime": "13.89"
+    "timestamp": "2024-09-12T22:35:32.778Z",
+    "elapsedTime": "16.09"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:53.821Z",
-    "elapsedTime": "14.03"
+    "timestamp": "2024-09-12T22:35:33.060Z",
+    "elapsedTime": "16.38"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:53.973Z",
-    "elapsedTime": "14.18"
+    "timestamp": "2024-09-12T22:35:33.309Z",
+    "elapsedTime": "16.63"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:54.116Z",
-    "elapsedTime": "14.33"
+    "timestamp": "2024-09-12T22:35:33.466Z",
+    "elapsedTime": "16.78"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:54.262Z",
-    "elapsedTime": "14.47"
+    "timestamp": "2024-09-12T22:35:33.634Z",
+    "elapsedTime": "16.95"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:54.399Z",
-    "elapsedTime": "14.61"
+    "timestamp": "2024-09-12T22:35:33.893Z",
+    "elapsedTime": "17.21"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:54.556Z",
-    "elapsedTime": "14.77"
+    "timestamp": "2024-09-12T22:35:34.050Z",
+    "elapsedTime": "17.37"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:54.707Z",
-    "elapsedTime": "14.92"
+    "timestamp": "2024-09-12T22:35:34.217Z",
+    "elapsedTime": "17.53"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:54.908Z",
-    "elapsedTime": "15.12"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:54.955Z",
-    "elapsedTime": "15.17",
-    "points": 1290,
-    "losses": 9
+    "timestamp": "2024-09-12T22:35:34.398Z",
+    "elapsedTime": "17.71"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:55.387Z",
-    "elapsedTime": "15.60"
+    "timestamp": "2024-09-12T22:35:34.680Z",
+    "elapsedTime": "18.00"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:55.537Z",
-    "elapsedTime": "15.75"
+    "timestamp": "2024-09-12T22:35:34.851Z",
+    "elapsedTime": "18.17"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:55.718Z",
-    "elapsedTime": "15.93"
+    "timestamp": "2024-09-12T22:35:35.018Z",
+    "elapsedTime": "18.33"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:55.853Z",
-    "elapsedTime": "16.06"
+    "timestamp": "2024-09-12T22:35:35.184Z",
+    "elapsedTime": "18.50"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:56.022Z",
-    "elapsedTime": "16.23"
+    "timestamp": "2024-09-12T22:35:35.455Z",
+    "elapsedTime": "18.77"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:56.149Z",
-    "elapsedTime": "16.36"
+    "timestamp": "2024-09-12T22:35:35.739Z",
+    "elapsedTime": "19.05"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:56.320Z",
-    "elapsedTime": "16.53"
+    "timestamp": "2024-09-12T22:35:35.997Z",
+    "elapsedTime": "19.31"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:56.476Z",
-    "elapsedTime": "16.69"
+    "timestamp": "2024-09-12T22:35:36.177Z",
+    "elapsedTime": "19.49"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:35:36.803Z",
+    "elapsedTime": "20.12",
+    "block": 2,
+    "newMode": "blue",
+    "timeLeft": 5452
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:56.645Z",
-    "elapsedTime": "16.86"
+    "timestamp": "2024-09-12T22:35:37.156Z",
+    "elapsedTime": "20.47"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:56.791Z",
-    "elapsedTime": "17.00"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:57.046Z",
-    "elapsedTime": "17.26",
-    "points": 1289,
-    "losses": 10
+    "timestamp": "2024-09-12T22:35:37.314Z",
+    "elapsedTime": "20.63"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:57.252Z",
-    "elapsedTime": "17.46"
+    "timestamp": "2024-09-12T22:35:37.484Z",
+    "elapsedTime": "20.80"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:57.394Z",
-    "elapsedTime": "17.61"
+    "timestamp": "2024-09-12T22:35:37.659Z",
+    "elapsedTime": "20.98"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:57.568Z",
-    "elapsedTime": "17.78"
+    "timestamp": "2024-09-12T22:35:38.001Z",
+    "elapsedTime": "21.32"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:57.695Z",
-    "elapsedTime": "17.91"
+    "timestamp": "2024-09-12T22:35:38.268Z",
+    "elapsedTime": "21.58"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:57.858Z",
-    "elapsedTime": "18.07"
+    "timestamp": "2024-09-12T22:35:38.425Z",
+    "elapsedTime": "21.74"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:57.997Z",
-    "elapsedTime": "18.21"
+    "timestamp": "2024-09-12T22:35:38.619Z",
+    "elapsedTime": "21.93"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:58.141Z",
-    "elapsedTime": "18.35"
+    "timestamp": "2024-09-12T22:35:38.925Z",
+    "elapsedTime": "22.24"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:58.270Z",
-    "elapsedTime": "18.48"
+    "timestamp": "2024-09-12T22:35:39.082Z",
+    "elapsedTime": "22.40"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:58.416Z",
-    "elapsedTime": "18.63"
+    "timestamp": "2024-09-12T22:35:39.254Z",
+    "elapsedTime": "22.57"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:35:39.776Z",
+    "elapsedTime": "23.09",
+    "block": 2,
+    "newMode": "yellow",
+    "timeLeft": 2125
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:58.545Z",
-    "elapsedTime": "18.76"
+    "timestamp": "2024-09-12T22:35:40.711Z",
+    "elapsedTime": "24.03"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:59.106Z",
-    "elapsedTime": "19.32"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:50:59.424Z",
-    "elapsedTime": "19.64",
-    "points": 1288,
-    "losses": 11
+    "timestamp": "2024-09-12T22:35:41.158Z",
+    "elapsedTime": "24.47"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:59.520Z",
-    "elapsedTime": "19.73"
+    "timestamp": "2024-09-12T22:35:41.345Z",
+    "elapsedTime": "24.66"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:50:59.973Z",
-    "elapsedTime": "20.18"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:00.336Z",
-    "elapsedTime": "20.55",
-    "points": 1287,
-    "losses": 12
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:01.571Z",
-    "elapsedTime": "21.78",
-    "points": 1287,
-    "losses": 12
+    "timestamp": "2024-09-12T22:35:41.635Z",
+    "elapsedTime": "24.95"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:02.847Z",
-    "elapsedTime": "23.06"
+    "timestamp": "2024-09-12T22:35:41.926Z",
+    "elapsedTime": "25.24"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:02.974Z",
-    "elapsedTime": "23.18"
+    "timestamp": "2024-09-12T22:35:42.133Z",
+    "elapsedTime": "25.45"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:03.112Z",
-    "elapsedTime": "23.32"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:03.319Z",
-    "elapsedTime": "23.53"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:03.461Z",
-    "elapsedTime": "23.67"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:03.654Z",
-    "elapsedTime": "23.86"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:03.782Z",
-    "elapsedTime": "23.99"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:03.915Z",
-    "elapsedTime": "24.13"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:03.999Z",
-    "elapsedTime": "24.21",
-    "points": 1285,
-    "losses": 14
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:04.099Z",
-    "elapsedTime": "24.31"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:04.566Z",
-    "elapsedTime": "24.78"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:04.702Z",
-    "elapsedTime": "24.91"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:04.881Z",
-    "elapsedTime": "25.09"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:05.019Z",
-    "elapsedTime": "25.23"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:05.186Z",
-    "elapsedTime": "25.40"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:05.527Z",
+    "timestamp": "2024-09-12T22:35:42.427Z",
     "elapsedTime": "25.74"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:05.729Z",
-    "elapsedTime": "25.94"
+    "timestamp": "2024-09-12T22:35:42.688Z",
+    "elapsedTime": "26.00"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:42.872Z",
+    "elapsedTime": "26.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:43.176Z",
+    "elapsedTime": "26.49"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:43.359Z",
+    "elapsedTime": "26.68"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:43.605Z",
+    "elapsedTime": "26.92"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:43.780Z",
+    "elapsedTime": "27.10"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:44.077Z",
+    "elapsedTime": "27.39"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:44.392Z",
+    "elapsedTime": "27.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:35:44.573Z",
+    "elapsedTime": "27.89"
+  },
+  {
+    "eventType": "Schedule End",
+    "timestamp": "2024-09-12T22:35:44.686Z",
+    "elapsedTime": "28.00",
+    "block": 2,
+    "intervalsGenerated": 1
+  },
+  {
+    "eventType": "Break End",
+    "timestamp": "2024-09-12T22:35:50.727Z",
+    "elapsedTime": "34.04",
+    "result": "Break time"
+  },
+  {
+    "eventType": "Experiment Start",
+    "timestamp": "2024-09-12T22:37:06.796Z",
+    "elapsedTime": "0.00"
+  },
+  {
+    "eventType": "Schedule Start",
+    "timestamp": "2024-09-12T22:37:06.800Z",
+    "elapsedTime": "0.00",
+    "block": 3,
+    "intervalType": 4000,
+    "maxLosses": 7
   },
   {
     "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:06.007Z",
-    "elapsedTime": "26.22",
-    "points": 1284,
-    "losses": 15
+    "timestamp": "2024-09-12T22:37:07.068Z",
+    "elapsedTime": "0.27",
+    "points": 1395,
+    "losses": 1,
+    "controlled": 0
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:06.359Z",
-    "elapsedTime": "26.57"
+    "timestamp": "2024-09-12T22:37:07.200Z",
+    "elapsedTime": "0.40"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:06.535Z",
-    "elapsedTime": "26.75"
+    "timestamp": "2024-09-12T22:37:07.541Z",
+    "elapsedTime": "0.74"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:06.695Z",
-    "elapsedTime": "26.91"
+    "timestamp": "2024-09-12T22:37:07.758Z",
+    "elapsedTime": "0.96"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:06.843Z",
-    "elapsedTime": "27.05"
+    "timestamp": "2024-09-12T22:37:08.025Z",
+    "elapsedTime": "1.23"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:07.030Z",
-    "elapsedTime": "27.24"
+    "timestamp": "2024-09-12T22:37:08.275Z",
+    "elapsedTime": "1.48"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:37:08.443Z",
+    "elapsedTime": "1.64",
+    "points": 1394,
+    "losses": 2,
+    "controlled": 0
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:07.156Z",
-    "elapsedTime": "27.37"
+    "timestamp": "2024-09-12T22:37:08.530Z",
+    "elapsedTime": "1.73"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:07.352Z",
-    "elapsedTime": "27.56"
+    "timestamp": "2024-09-12T22:37:08.753Z",
+    "elapsedTime": "1.95"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:07.520Z",
-    "elapsedTime": "27.73"
+    "timestamp": "2024-09-12T22:37:08.981Z",
+    "elapsedTime": "2.18"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:08.183Z",
+    "timestamp": "2024-09-12T22:37:09.241Z",
+    "elapsedTime": "2.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:09.501Z",
+    "elapsedTime": "2.70"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:09.758Z",
+    "elapsedTime": "2.96"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:09.974Z",
+    "elapsedTime": "3.17"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:37:09.998Z",
+    "elapsedTime": "3.20",
+    "points": 1393,
+    "losses": 3,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:10.236Z",
+    "elapsedTime": "3.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:10.468Z",
+    "elapsedTime": "3.67"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:10.735Z",
+    "elapsedTime": "3.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:11.004Z",
+    "elapsedTime": "4.20"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:11.269Z",
+    "elapsedTime": "4.47"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:11.510Z",
+    "elapsedTime": "4.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:11.738Z",
+    "elapsedTime": "4.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:11.995Z",
+    "elapsedTime": "5.20"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:12.233Z",
+    "elapsedTime": "5.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:12.466Z",
+    "elapsedTime": "5.67"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:12.712Z",
+    "elapsedTime": "5.91"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:12.924Z",
+    "elapsedTime": "6.12"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:13.188Z",
+    "elapsedTime": "6.39"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:37:14.265Z",
+    "elapsedTime": "7.46",
+    "block": 3,
+    "newMode": "blue",
+    "timeLeft": 1380
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:14.698Z",
+    "elapsedTime": "7.90"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:14.940Z",
+    "elapsedTime": "8.14"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:15.232Z",
+    "elapsedTime": "8.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:15.469Z",
+    "elapsedTime": "8.67"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:15.707Z",
+    "elapsedTime": "8.91"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:15.971Z",
+    "elapsedTime": "9.17"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:16.407Z",
+    "elapsedTime": "9.61"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:17.809Z",
+    "elapsedTime": "11.01"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:18.074Z",
+    "elapsedTime": "11.27"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:18.400Z",
+    "elapsedTime": "11.60"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:18.704Z",
+    "elapsedTime": "11.90"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:18.975Z",
+    "elapsedTime": "12.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:19.223Z",
+    "elapsedTime": "12.42"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:19.501Z",
+    "elapsedTime": "12.70"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:19.762Z",
+    "elapsedTime": "12.96"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:19.982Z",
+    "elapsedTime": "13.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:20.199Z",
+    "elapsedTime": "13.40"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:20.634Z",
+    "elapsedTime": "13.83"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:21.178Z",
+    "elapsedTime": "14.38"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:21.664Z",
+    "elapsedTime": "14.86"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:22.179Z",
+    "elapsedTime": "15.38"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:22.708Z",
+    "elapsedTime": "15.91"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:22.974Z",
+    "elapsedTime": "16.17"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:23.306Z",
+    "elapsedTime": "16.51"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:23.754Z",
+    "elapsedTime": "16.95"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:24.229Z",
+    "elapsedTime": "17.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:24.748Z",
+    "elapsedTime": "17.95"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:25.262Z",
+    "elapsedTime": "18.46"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:25.730Z",
+    "elapsedTime": "18.93"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:26.228Z",
+    "elapsedTime": "19.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:26.678Z",
+    "elapsedTime": "19.88"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:27.196Z",
+    "elapsedTime": "20.40"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:27.726Z",
+    "elapsedTime": "20.93"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:28.234Z",
+    "elapsedTime": "21.43"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:37:28.253Z",
+    "elapsedTime": "21.45",
+    "points": 1392,
+    "losses": 4,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:28.715Z",
+    "elapsedTime": "21.91"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:29.212Z",
+    "elapsedTime": "22.41"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:37:30.341Z",
+    "elapsedTime": "23.54",
+    "block": 3,
+    "newMode": "yellow",
+    "timeLeft": 5997
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:30.672Z",
+    "elapsedTime": "23.87"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:30.883Z",
+    "elapsedTime": "24.08"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:31.085Z",
+    "elapsedTime": "24.29"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:31.272Z",
+    "elapsedTime": "24.47"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:37:31.464Z",
+    "elapsedTime": "24.66"
+  },
+  {
+    "eventType": "Schedule End",
+    "timestamp": "2024-09-12T22:37:34.803Z",
+    "elapsedTime": "28.00",
+    "block": 3,
+    "intervalsGenerated": 4
+  },
+  {
+    "eventType": "Break End",
+    "timestamp": "2024-09-12T22:38:20.809Z",
+    "elapsedTime": "74.01",
+    "result": "Break time"
+  },
+  {
+    "eventType": "Experiment Start",
+    "timestamp": "2024-09-12T22:38:21.648Z",
+    "elapsedTime": "0.00"
+  },
+  {
+    "eventType": "Schedule Start",
+    "timestamp": "2024-09-12T22:38:21.649Z",
+    "elapsedTime": "0.00",
+    "block": 4,
+    "intervalType": 1000,
+    "maxLosses": 6
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:22.159Z",
+    "elapsedTime": "0.51"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:22.363Z",
+    "elapsedTime": "0.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:22.597Z",
+    "elapsedTime": "0.95"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:22.827Z",
+    "elapsedTime": "1.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:23.096Z",
+    "elapsedTime": "1.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:23.297Z",
+    "elapsedTime": "1.65"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:23.377Z",
+    "elapsedTime": "1.73",
+    "points": 1391,
+    "losses": 1,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:23.577Z",
+    "elapsedTime": "1.93"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:23.793Z",
+    "elapsedTime": "2.14"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:24.044Z",
+    "elapsedTime": "2.40"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:24.330Z",
+    "elapsedTime": "2.68"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:24.789Z",
+    "elapsedTime": "3.14"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:25.033Z",
+    "elapsedTime": "3.38"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:25.255Z",
+    "elapsedTime": "3.61"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:25.480Z",
+    "elapsedTime": "3.83"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:25.965Z",
+    "elapsedTime": "4.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:26.202Z",
+    "elapsedTime": "4.55"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:26.461Z",
+    "elapsedTime": "4.81"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:26.695Z",
+    "elapsedTime": "5.05"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:27.180Z",
+    "elapsedTime": "5.53"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:27.611Z",
+    "elapsedTime": "5.96"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:27.828Z",
+    "elapsedTime": "6.18",
+    "points": 1390,
+    "losses": 2,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:27.847Z",
+    "elapsedTime": "6.20"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:28.097Z",
+    "elapsedTime": "6.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:28.600Z",
+    "elapsedTime": "6.95"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:28.836Z",
+    "elapsedTime": "7.19"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:38:29.817Z",
+    "elapsedTime": "8.17",
+    "block": 4,
+    "newMode": "blue",
+    "timeLeft": 25
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:29.849Z",
+    "elapsedTime": "8.20",
+    "points": 1389,
+    "losses": 3,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:30.199Z",
+    "elapsedTime": "8.55"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:30.776Z",
+    "elapsedTime": "9.13"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:30.991Z",
+    "elapsedTime": "9.34"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:31.267Z",
+    "elapsedTime": "9.62"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:31.523Z",
+    "elapsedTime": "9.87"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:31.748Z",
+    "elapsedTime": "10.10"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:31.998Z",
+    "elapsedTime": "10.35"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:32.228Z",
+    "elapsedTime": "10.58"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:32.231Z",
+    "elapsedTime": "10.58",
+    "points": 1388,
+    "losses": 4,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:32.477Z",
+    "elapsedTime": "10.83"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:32.736Z",
+    "elapsedTime": "11.09"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:32.951Z",
+    "elapsedTime": "11.30"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:33.210Z",
+    "elapsedTime": "11.56"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:33.693Z",
+    "elapsedTime": "12.04"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:33.934Z",
+    "elapsedTime": "12.28"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:34.179Z",
+    "elapsedTime": "12.53"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:34.423Z",
+    "elapsedTime": "12.77"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:34.906Z",
+    "elapsedTime": "13.26"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:35.322Z",
+    "elapsedTime": "13.67",
+    "points": 1387,
+    "losses": 5,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:35.323Z",
+    "elapsedTime": "13.67"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:35.563Z",
+    "elapsedTime": "13.91"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:35.819Z",
+    "elapsedTime": "14.17"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:36.280Z",
+    "elapsedTime": "14.63"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:36.506Z",
+    "elapsedTime": "14.86"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:36.728Z",
+    "elapsedTime": "15.08"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:36.973Z",
+    "elapsedTime": "15.32"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:37.141Z",
+    "elapsedTime": "15.49",
+    "points": 1386,
+    "losses": 6,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:37.413Z",
+    "elapsedTime": "15.76"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:37.642Z",
+    "elapsedTime": "15.99"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:37.868Z",
+    "elapsedTime": "16.22"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:38.097Z",
+    "elapsedTime": "16.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:38.544Z",
+    "elapsedTime": "16.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:38.970Z",
+    "elapsedTime": "17.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:39.207Z",
+    "elapsedTime": "17.56"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:39.427Z",
+    "elapsedTime": "17.78"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:40.825Z",
+    "elapsedTime": "19.18",
+    "points": 1385,
+    "losses": 7,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:42.131Z",
+    "elapsedTime": "20.48"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:42.392Z",
+    "elapsedTime": "20.74"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:42.623Z",
+    "elapsedTime": "20.97"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:42.876Z",
+    "elapsedTime": "21.23"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:43.136Z",
+    "elapsedTime": "21.49"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:43.282Z",
+    "elapsedTime": "21.63",
+    "points": 1384,
+    "losses": 8,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:43.359Z",
+    "elapsedTime": "21.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:43.614Z",
+    "elapsedTime": "21.96"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:43.985Z",
+    "elapsedTime": "22.34"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:44.423Z",
+    "elapsedTime": "22.77"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:44.631Z",
+    "elapsedTime": "22.98"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:44.864Z",
+    "elapsedTime": "23.21"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:44.874Z",
+    "elapsedTime": "23.23",
+    "points": 1383,
+    "losses": 9,
+    "controlled": 1
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:44.979Z",
+    "elapsedTime": "23.33",
+    "points": 1382,
+    "losses": 10,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:45.274Z",
+    "elapsedTime": "23.63"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:45.492Z",
+    "elapsedTime": "23.84"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:45.791Z",
+    "elapsedTime": "24.14"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:46.028Z",
+    "elapsedTime": "24.38"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:46.290Z",
+    "elapsedTime": "24.64",
+    "points": 1381,
+    "losses": 11,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:46.291Z",
+    "elapsedTime": "24.64"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:46.735Z",
+    "elapsedTime": "25.09"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:46.974Z",
+    "elapsedTime": "25.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:47.201Z",
+    "elapsedTime": "25.55"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:47.461Z",
+    "elapsedTime": "25.81"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:47.806Z",
+    "elapsedTime": "26.16",
+    "points": 1380,
+    "losses": 12,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:47.896Z",
+    "elapsedTime": "26.25"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:48.280Z",
+    "elapsedTime": "26.63"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:48.544Z",
+    "elapsedTime": "26.89"
+  },
+  {
+    "eventType": "Schedule End",
+    "timestamp": "2024-09-12T22:38:48.651Z",
+    "elapsedTime": "27.00",
+    "block": 4,
+    "intervalsGenerated": 12
+  },
+  {
+    "eventType": "Break End",
+    "timestamp": "2024-09-12T22:38:50.274Z",
+    "elapsedTime": "28.63",
+    "result": "Break time"
+  },
+  {
+    "eventType": "Experiment Start",
+    "timestamp": "2024-09-12T22:38:51.084Z",
+    "elapsedTime": "0.00"
+  },
+  {
+    "eventType": "Schedule Start",
+    "timestamp": "2024-09-12T22:38:51.085Z",
+    "elapsedTime": "0.00",
+    "block": 5,
+    "intervalType": 1000,
+    "maxLosses": 7
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:51.346Z",
+    "elapsedTime": "0.26"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:51.442Z",
+    "elapsedTime": "0.36",
+    "points": 1379,
+    "losses": 1,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:51.555Z",
+    "elapsedTime": "0.47"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:51.805Z",
+    "elapsedTime": "0.72"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:52.052Z",
+    "elapsedTime": "0.97"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:52.293Z",
+    "elapsedTime": "1.21"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:52.319Z",
+    "elapsedTime": "1.24",
+    "points": 1378,
+    "losses": 2,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:52.522Z",
+    "elapsedTime": "1.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:52.765Z",
+    "elapsedTime": "1.68"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:53.022Z",
+    "elapsedTime": "1.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:53.246Z",
+    "elapsedTime": "2.16"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:53.459Z",
+    "elapsedTime": "2.38"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:53.746Z",
+    "elapsedTime": "2.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:54.136Z",
+    "elapsedTime": "3.05"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:38:54.149Z",
+    "elapsedTime": "3.06",
+    "points": 1377,
+    "losses": 3,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:54.352Z",
+    "elapsedTime": "3.27"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:54.582Z",
+    "elapsedTime": "3.50"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:38:55.688Z",
+    "elapsedTime": "4.60",
+    "block": 5,
+    "newMode": "yellow",
+    "timeLeft": 455
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:56.055Z",
+    "elapsedTime": "4.97"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:56.280Z",
+    "elapsedTime": "5.20"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:56.710Z",
+    "elapsedTime": "5.63"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:56.936Z",
+    "elapsedTime": "5.85"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:57.150Z",
+    "elapsedTime": "6.07"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:57.370Z",
+    "elapsedTime": "6.29"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:57.872Z",
+    "elapsedTime": "6.79"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:58.084Z",
+    "elapsedTime": "7.00"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:58.289Z",
+    "elapsedTime": "7.21"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:58.491Z",
+    "elapsedTime": "7.41"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:58.688Z",
+    "elapsedTime": "7.60"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:58.902Z",
+    "elapsedTime": "7.82"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:59.151Z",
+    "elapsedTime": "8.07"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:59.514Z",
+    "elapsedTime": "8.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:59.740Z",
+    "elapsedTime": "8.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:38:59.963Z",
+    "elapsedTime": "8.88"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:00.187Z",
+    "elapsedTime": "9.10"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:00.434Z",
+    "elapsedTime": "9.35",
+    "points": 1376,
+    "losses": 4,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:00.437Z",
+    "elapsedTime": "9.35"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:00.651Z",
+    "elapsedTime": "9.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:00.890Z",
+    "elapsedTime": "9.81"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:01.114Z",
+    "elapsedTime": "10.03"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:01.381Z",
+    "elapsedTime": "10.30"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:01.793Z",
+    "elapsedTime": "10.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:02.035Z",
+    "elapsedTime": "10.95"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:02.281Z",
+    "elapsedTime": "11.20"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:02.505Z",
+    "elapsedTime": "11.42"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:02.755Z",
+    "elapsedTime": "11.67"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:02.970Z",
+    "elapsedTime": "11.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:03.465Z",
+    "elapsedTime": "12.38"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:03.722Z",
+    "elapsedTime": "12.64"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:03.948Z",
+    "elapsedTime": "12.86"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:03.998Z",
+    "elapsedTime": "12.91",
+    "points": 1375,
+    "losses": 5,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:04.181Z",
+    "elapsedTime": "13.10"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:04.420Z",
+    "elapsedTime": "13.34"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:04.638Z",
+    "elapsedTime": "13.55"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:04.718Z",
+    "elapsedTime": "13.63",
+    "points": 1374,
+    "losses": 6,
+    "controlled": 1
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:04.840Z",
+    "elapsedTime": "13.76",
+    "points": 1373,
+    "losses": 7,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:04.866Z",
+    "elapsedTime": "13.78"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:05.087Z",
+    "elapsedTime": "14.00"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:05.201Z",
+    "elapsedTime": "14.12",
+    "points": 1372,
+    "losses": 8,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:05.655Z",
+    "elapsedTime": "14.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:05.893Z",
+    "elapsedTime": "14.81"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:05.914Z",
+    "elapsedTime": "14.83",
+    "points": 1371,
+    "losses": 9,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:06.133Z",
+    "elapsedTime": "15.05"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:06.341Z",
+    "elapsedTime": "15.26"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:06.567Z",
+    "elapsedTime": "15.48"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:06.784Z",
+    "elapsedTime": "15.70"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:07.017Z",
+    "elapsedTime": "15.93"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:07.178Z",
+    "elapsedTime": "16.09",
+    "points": 1370,
+    "losses": 10,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:07.260Z",
+    "elapsedTime": "16.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:07.531Z",
+    "elapsedTime": "16.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:07.772Z",
+    "elapsedTime": "16.69"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:07.972Z",
+    "elapsedTime": "16.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:08.522Z",
+    "elapsedTime": "17.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:08.748Z",
+    "elapsedTime": "17.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:08.994Z",
+    "elapsedTime": "17.91"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:09.255Z",
+    "elapsedTime": "18.17"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:09.500Z",
+    "elapsedTime": "18.42"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:09.748Z",
+    "elapsedTime": "18.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:09.975Z",
+    "elapsedTime": "18.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:10.249Z",
+    "elapsedTime": "19.16"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:10.387Z",
+    "elapsedTime": "19.30",
+    "points": 1369,
+    "losses": 11,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:10.446Z",
+    "elapsedTime": "19.36"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:10.585Z",
+    "elapsedTime": "19.50",
+    "points": 1368,
+    "losses": 12,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:10.679Z",
+    "elapsedTime": "19.59"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:10.904Z",
+    "elapsedTime": "19.82"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:11.154Z",
+    "elapsedTime": "20.07"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:11.397Z",
+    "elapsedTime": "20.31"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:11.627Z",
+    "elapsedTime": "20.54",
+    "points": 1367,
+    "losses": 13,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:11.659Z",
+    "elapsedTime": "20.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:11.888Z",
+    "elapsedTime": "20.80"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:12.030Z",
+    "elapsedTime": "20.95",
+    "points": 1366,
+    "losses": 14,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:12.120Z",
+    "elapsedTime": "21.04"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:12.352Z",
+    "elapsedTime": "21.27"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:12.597Z",
+    "elapsedTime": "21.51"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:12.847Z",
+    "elapsedTime": "21.76"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:13.078Z",
+    "elapsedTime": "21.99"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:13.319Z",
+    "elapsedTime": "22.23"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:13.568Z",
+    "elapsedTime": "22.48"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:13.817Z",
+    "elapsedTime": "22.73"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:14.078Z",
+    "elapsedTime": "22.99"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:14.319Z",
+    "elapsedTime": "23.23"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:14.611Z",
+    "elapsedTime": "23.53"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:15.047Z",
+    "elapsedTime": "23.96"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:15.292Z",
+    "elapsedTime": "24.21"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:15.534Z",
+    "elapsedTime": "24.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:15.772Z",
+    "elapsedTime": "24.69"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:16.005Z",
+    "elapsedTime": "24.92"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:16.257Z",
+    "elapsedTime": "25.17"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:16.454Z",
+    "elapsedTime": "25.37"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:16.612Z",
+    "elapsedTime": "25.53",
+    "points": 1365,
+    "losses": 15,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:16.721Z",
+    "elapsedTime": "25.64"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:17.211Z",
+    "elapsedTime": "26.13"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:17.316Z",
+    "elapsedTime": "26.23",
+    "points": 1364,
+    "losses": 16,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:17.429Z",
+    "elapsedTime": "26.34"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:17.705Z",
+    "elapsedTime": "26.62"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:17.903Z",
+    "elapsedTime": "26.82",
+    "points": 1363,
+    "losses": 17,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:17.936Z",
+    "elapsedTime": "26.85"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:18.148Z",
+    "elapsedTime": "27.06"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:18.394Z",
+    "elapsedTime": "27.31"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:18.855Z",
+    "elapsedTime": "27.77"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:19.077Z",
+    "elapsedTime": "27.99",
+    "points": 1362,
+    "losses": 18,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:19.099Z",
+    "elapsedTime": "28.02"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:19.338Z",
+    "elapsedTime": "28.25"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:19.590Z",
+    "elapsedTime": "28.51"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:19.865Z",
+    "elapsedTime": "28.78"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:20.082Z",
+    "elapsedTime": "29.00"
+  },
+  {
+    "eventType": "Schedule End",
+    "timestamp": "2024-09-12T22:39:20.086Z",
+    "elapsedTime": "29.00",
+    "block": 5,
+    "intervalsGenerated": 18
+  },
+  {
+    "eventType": "Break End",
+    "timestamp": "2024-09-12T22:39:21.788Z",
+    "elapsedTime": "30.70",
+    "result": "Break time"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:39:22.898Z",
+    "elapsedTime": "31.81",
+    "block": 6,
+    "newMode": "blue",
+    "timeLeft": -1530
+  },
+  {
+    "eventType": "Experiment Start",
+    "timestamp": "2024-09-12T22:39:23.284Z",
+    "elapsedTime": "0.00"
+  },
+  {
+    "eventType": "Schedule Start",
+    "timestamp": "2024-09-12T22:39:23.285Z",
+    "elapsedTime": "0.00",
+    "block": 6,
+    "intervalType": 1000,
+    "maxLosses": 9
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:23.767Z",
+    "elapsedTime": "0.48"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:24.017Z",
+    "elapsedTime": "0.73"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:24.225Z",
+    "elapsedTime": "0.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:24.478Z",
+    "elapsedTime": "1.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:24.872Z",
+    "elapsedTime": "1.59"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:25.085Z",
+    "elapsedTime": "1.80"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:25.322Z",
+    "elapsedTime": "2.04"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:25.495Z",
+    "elapsedTime": "2.21",
+    "points": 1361,
+    "losses": 1,
+    "controlled": 1
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:25.507Z",
+    "elapsedTime": "2.22",
+    "points": 1360,
+    "losses": 2,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:25.554Z",
+    "elapsedTime": "2.27"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:25.782Z",
+    "elapsedTime": "2.50"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:26.038Z",
+    "elapsedTime": "2.75"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:26.297Z",
+    "elapsedTime": "3.01",
+    "points": 1359,
+    "losses": 3,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:26.393Z",
+    "elapsedTime": "3.11"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:26.632Z",
+    "elapsedTime": "3.35"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:26.863Z",
+    "elapsedTime": "3.58"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:27.089Z",
+    "elapsedTime": "3.80"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:27.327Z",
+    "elapsedTime": "4.04"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:27.547Z",
+    "elapsedTime": "4.26"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:27.776Z",
+    "elapsedTime": "4.49"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:27.983Z",
+    "elapsedTime": "4.70"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:28.195Z",
+    "elapsedTime": "4.91"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:39:28.737Z",
+    "elapsedTime": "5.45",
+    "block": 6,
+    "newMode": "yellow",
+    "timeLeft": 817
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:29.091Z",
+    "elapsedTime": "5.81"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:29.301Z",
+    "elapsedTime": "6.02"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:29.313Z",
+    "elapsedTime": "6.03",
+    "points": 1358,
+    "losses": 4,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:29.512Z",
+    "elapsedTime": "6.23"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:29.750Z",
+    "elapsedTime": "6.46"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:29.994Z",
+    "elapsedTime": "6.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:30.417Z",
+    "elapsedTime": "7.13"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:30.656Z",
+    "elapsedTime": "7.37"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:30.715Z",
+    "elapsedTime": "7.43",
+    "points": 1357,
+    "losses": 5,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:30.873Z",
+    "elapsedTime": "7.59"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:31.267Z",
+    "elapsedTime": "7.98"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:31.522Z",
+    "elapsedTime": "8.24"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:31.750Z",
+    "elapsedTime": "8.46"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:31.966Z",
+    "elapsedTime": "8.68",
+    "points": 1356,
+    "losses": 6,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:31.974Z",
+    "elapsedTime": "8.69"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:32.223Z",
+    "elapsedTime": "8.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:32.463Z",
+    "elapsedTime": "9.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:32.742Z",
+    "elapsedTime": "9.46"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:32.998Z",
+    "elapsedTime": "9.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:33.241Z",
+    "elapsedTime": "9.96"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:33.500Z",
+    "elapsedTime": "10.21"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:33.755Z",
+    "elapsedTime": "10.47"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:34.011Z",
+    "elapsedTime": "10.73"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:34.238Z",
+    "elapsedTime": "10.95"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:34.474Z",
+    "elapsedTime": "11.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:34.720Z",
+    "elapsedTime": "11.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:34.980Z",
+    "elapsedTime": "11.70"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:35.197Z",
+    "elapsedTime": "11.91",
+    "points": 1355,
+    "losses": 7,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:35.228Z",
+    "elapsedTime": "11.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:35.464Z",
+    "elapsedTime": "12.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:35.724Z",
+    "elapsedTime": "12.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:35.983Z",
+    "elapsedTime": "12.70"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:36.230Z",
+    "elapsedTime": "12.95"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:36.478Z",
+    "elapsedTime": "13.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:36.713Z",
+    "elapsedTime": "13.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:36.948Z",
+    "elapsedTime": "13.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:37.185Z",
+    "elapsedTime": "13.90"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:37.430Z",
+    "elapsedTime": "14.14"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:37.658Z",
+    "elapsedTime": "14.37"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:37.889Z",
+    "elapsedTime": "14.60"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:38.130Z",
+    "elapsedTime": "14.85"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:38.368Z",
+    "elapsedTime": "15.08",
+    "points": 1354,
+    "losses": 8,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:38.373Z",
+    "elapsedTime": "15.09"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:38.591Z",
+    "elapsedTime": "15.31"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:38.837Z",
+    "elapsedTime": "15.55"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:39.073Z",
+    "elapsedTime": "15.79"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:39.344Z",
+    "elapsedTime": "16.06"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:39.576Z",
+    "elapsedTime": "16.29"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:39.842Z",
+    "elapsedTime": "16.56"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:40.080Z",
+    "elapsedTime": "16.80"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:40.604Z",
+    "elapsedTime": "17.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:40.888Z",
+    "elapsedTime": "17.60"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:41.147Z",
+    "elapsedTime": "17.86"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:41.370Z",
+    "elapsedTime": "18.09"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:41.607Z",
+    "elapsedTime": "18.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:41.844Z",
+    "elapsedTime": "18.56"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:42.061Z",
+    "elapsedTime": "18.78"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:39:42.293Z",
+    "elapsedTime": "19.01",
+    "points": 1353,
+    "losses": 9,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:42.315Z",
+    "elapsedTime": "19.03"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:42.567Z",
+    "elapsedTime": "19.28"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:42.800Z",
+    "elapsedTime": "19.52"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:43.066Z",
+    "elapsedTime": "19.78"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:43.313Z",
+    "elapsedTime": "20.03"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:43.521Z",
+    "elapsedTime": "20.24"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:43.772Z",
+    "elapsedTime": "20.49"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:44.011Z",
+    "elapsedTime": "20.73"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:44.255Z",
+    "elapsedTime": "20.97"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:44.459Z",
+    "elapsedTime": "21.17"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:44.678Z",
+    "elapsedTime": "21.39"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:44.937Z",
+    "elapsedTime": "21.65"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:45.184Z",
+    "elapsedTime": "21.90"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:45.503Z",
+    "elapsedTime": "22.22"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:46.047Z",
+    "elapsedTime": "22.76"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:46.385Z",
+    "elapsedTime": "23.10"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:46.899Z",
+    "elapsedTime": "23.61"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:47.362Z",
+    "elapsedTime": "24.08"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:47.814Z",
+    "elapsedTime": "24.53"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:48.264Z",
+    "elapsedTime": "24.98"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:48.786Z",
+    "elapsedTime": "25.50"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:49.280Z",
+    "elapsedTime": "26.00"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:49.741Z",
+    "elapsedTime": "26.46"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:50.250Z",
+    "elapsedTime": "26.96"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:50.713Z",
+    "elapsedTime": "27.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:51.117Z",
+    "elapsedTime": "27.83"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:51.680Z",
     "elapsedTime": "28.39"
   },
   {
     "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:08.352Z",
-    "elapsedTime": "28.56"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:08.495Z",
-    "elapsedTime": "28.71"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:08.557Z",
-    "elapsedTime": "28.77",
-    "points": 1283,
-    "losses": 16
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:08.666Z",
-    "elapsedTime": "28.88"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:08.819Z",
-    "elapsedTime": "29.03"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:08.995Z",
-    "elapsedTime": "29.21"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:09.132Z",
-    "elapsedTime": "29.34"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:09.295Z",
-    "elapsedTime": "29.51"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:10.073Z",
-    "elapsedTime": "30.28"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:10.231Z",
-    "elapsedTime": "30.44"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:10.360Z",
-    "elapsedTime": "30.57",
-    "points": 1282,
-    "losses": 17
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:10.391Z",
-    "elapsedTime": "30.60"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:10.552Z",
-    "elapsedTime": "30.76"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:10.691Z",
-    "elapsedTime": "30.90"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:10.883Z",
-    "elapsedTime": "31.09"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:11.028Z",
-    "elapsedTime": "31.24"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:11.518Z",
-    "elapsedTime": "31.73",
-    "points": 1281,
-    "losses": 18
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:11.902Z",
-    "elapsedTime": "32.11"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:12.047Z",
-    "elapsedTime": "32.26"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:12.207Z",
-    "elapsedTime": "32.42"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:12.397Z",
-    "elapsedTime": "32.61"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:12.536Z",
-    "elapsedTime": "32.75"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:12.707Z",
-    "elapsedTime": "32.92"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:12.864Z",
-    "elapsedTime": "33.08"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:13.632Z",
-    "elapsedTime": "33.84",
-    "points": 1280,
-    "losses": 19
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:13.757Z",
-    "elapsedTime": "33.97"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:13.903Z",
-    "elapsedTime": "34.11"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:14.072Z",
-    "elapsedTime": "34.28"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:14.231Z",
-    "elapsedTime": "34.44"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:14.381Z",
-    "elapsedTime": "34.59"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:14.569Z",
-    "elapsedTime": "34.78"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:14.749Z",
-    "elapsedTime": "34.96"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:15.606Z",
-    "elapsedTime": "35.82"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:15.730Z",
-    "elapsedTime": "35.94",
-    "points": 1279,
-    "losses": 20
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:15.756Z",
-    "elapsedTime": "35.97"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:15.911Z",
-    "elapsedTime": "36.12"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:15.983Z",
-    "elapsedTime": "36.19",
-    "points": 1278,
-    "losses": 21
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:16.107Z",
-    "elapsedTime": "36.32"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:16.232Z",
-    "elapsedTime": "36.44"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:16.422Z",
-    "elapsedTime": "36.63"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:16.656Z",
-    "elapsedTime": "36.87"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:17.470Z",
-    "elapsedTime": "37.68"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:17.630Z",
-    "elapsedTime": "37.84"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:17.790Z",
-    "elapsedTime": "38.00"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:17.971Z",
-    "elapsedTime": "38.18"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:18.115Z",
-    "elapsedTime": "38.33"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:18.292Z",
-    "elapsedTime": "38.50"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:18.453Z",
-    "elapsedTime": "38.66"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:18.779Z",
-    "elapsedTime": "38.99"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:19.026Z",
-    "elapsedTime": "39.24",
-    "points": 1277,
-    "losses": 22
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:19.082Z",
-    "elapsedTime": "39.29"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:19.344Z",
-    "elapsedTime": "39.55"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:19.453Z",
-    "elapsedTime": "39.66"
-  },
-  {
-    "eventType": "Point Loss",
-    "timestamp": "2024-08-04T22:51:19.648Z",
-    "elapsedTime": "39.86",
-    "points": 1276,
-    "losses": 23
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:19.652Z",
-    "elapsedTime": "39.86"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:19.786Z",
-    "elapsedTime": "40.00"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:19.962Z",
-    "elapsedTime": "40.17"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:20.090Z",
-    "elapsedTime": "40.30"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:20.253Z",
-    "elapsedTime": "40.46"
-  },
-  {
-    "eventType": "Button Press",
-    "timestamp": "2024-08-04T22:51:20.520Z",
-    "elapsedTime": "40.73"
+    "timestamp": "2024-09-12T22:39:52.129Z",
+    "elapsedTime": "28.84"
   },
   {
     "eventType": "Schedule End",
-    "timestamp": "2024-08-04T22:51:20.793Z",
-    "elapsedTime": "41.00",
-    "block": 1,
-    "intervalsGenerated": 24
+    "timestamp": "2024-09-12T22:39:52.286Z",
+    "elapsedTime": "29.00",
+    "block": 6,
+    "intervalsGenerated": 11
+  },
+  {
+    "eventType": "Break End",
+    "timestamp": "2024-09-12T22:39:55.084Z",
+    "elapsedTime": "31.80",
+    "result": "Break time"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:39:56.329Z",
+    "elapsedTime": "33.04",
+    "block": 7,
+    "newMode": "blue",
+    "timeLeft": -3676
+  },
+  {
+    "eventType": "Experiment Start",
+    "timestamp": "2024-09-12T22:39:56.827Z",
+    "elapsedTime": "0.00"
+  },
+  {
+    "eventType": "Schedule Start",
+    "timestamp": "2024-09-12T22:39:56.827Z",
+    "elapsedTime": "0.00",
+    "block": 7,
+    "intervalType": 7000,
+    "maxLosses": 9
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:57.264Z",
+    "elapsedTime": "0.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:57.574Z",
+    "elapsedTime": "0.75"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:57.803Z",
+    "elapsedTime": "0.98"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:58.046Z",
+    "elapsedTime": "1.22"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:58.278Z",
+    "elapsedTime": "1.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:58.528Z",
+    "elapsedTime": "1.70"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:58.781Z",
+    "elapsedTime": "1.95"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:59.037Z",
+    "elapsedTime": "2.21"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:59.266Z",
+    "elapsedTime": "2.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:59.534Z",
+    "elapsedTime": "2.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:59.746Z",
+    "elapsedTime": "2.92"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:39:59.995Z",
+    "elapsedTime": "3.17"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:00.226Z",
+    "elapsedTime": "3.40"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:00.461Z",
+    "elapsedTime": "3.63"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:00.697Z",
+    "elapsedTime": "3.87"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:00.938Z",
+    "elapsedTime": "4.11"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:01.143Z",
+    "elapsedTime": "4.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:01.379Z",
+    "elapsedTime": "4.55"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:01.631Z",
+    "elapsedTime": "4.80"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:02.058Z",
+    "elapsedTime": "5.23"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:02.275Z",
+    "elapsedTime": "5.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:02.484Z",
+    "elapsedTime": "5.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:02.656Z",
+    "elapsedTime": "5.83"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:40:03.342Z",
+    "elapsedTime": "6.51",
+    "block": 7,
+    "newMode": "yellow",
+    "timeLeft": 10461
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:03.732Z",
+    "elapsedTime": "6.91"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:04.020Z",
+    "elapsedTime": "7.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:04.259Z",
+    "elapsedTime": "7.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:04.528Z",
+    "elapsedTime": "7.70"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:05.011Z",
+    "elapsedTime": "8.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:05.251Z",
+    "elapsedTime": "8.42"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:05.491Z",
+    "elapsedTime": "8.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:05.887Z",
+    "elapsedTime": "9.06"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:06.138Z",
+    "elapsedTime": "9.31"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:06.446Z",
+    "elapsedTime": "9.62"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:06.713Z",
+    "elapsedTime": "9.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:07.209Z",
+    "elapsedTime": "10.38"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:07.534Z",
+    "elapsedTime": "10.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:07.831Z",
+    "elapsedTime": "11.00"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:08.030Z",
+    "elapsedTime": "11.20"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:08.394Z",
+    "elapsedTime": "11.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:08.743Z",
+    "elapsedTime": "11.92"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:09.201Z",
+    "elapsedTime": "12.37"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:09.525Z",
+    "elapsedTime": "12.70"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:09.794Z",
+    "elapsedTime": "12.97"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:10.039Z",
+    "elapsedTime": "13.21"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:10.359Z",
+    "elapsedTime": "13.53"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:10.825Z",
+    "elapsedTime": "14.00"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:11.065Z",
+    "elapsedTime": "14.24"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:11.327Z",
+    "elapsedTime": "14.50"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:11.585Z",
+    "elapsedTime": "14.76"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:11.843Z",
+    "elapsedTime": "15.02"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:12.113Z",
+    "elapsedTime": "15.29"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:12.495Z",
+    "elapsedTime": "15.67"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:13.005Z",
+    "elapsedTime": "16.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:13.323Z",
+    "elapsedTime": "16.50"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:13.662Z",
+    "elapsedTime": "16.84"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:14.019Z",
+    "elapsedTime": "17.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:14.379Z",
+    "elapsedTime": "17.55"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:14.704Z",
+    "elapsedTime": "17.88"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:15.070Z",
+    "elapsedTime": "18.24"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:15.346Z",
+    "elapsedTime": "18.52"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:15.662Z",
+    "elapsedTime": "18.84"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:16.003Z",
+    "elapsedTime": "19.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:16.385Z",
+    "elapsedTime": "19.56"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:16.705Z",
+    "elapsedTime": "19.88"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:16.953Z",
+    "elapsedTime": "20.13"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:17.254Z",
+    "elapsedTime": "20.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:17.613Z",
+    "elapsedTime": "20.79"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:17.896Z",
+    "elapsedTime": "21.07"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:18.201Z",
+    "elapsedTime": "21.37"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:18.512Z",
+    "elapsedTime": "21.68"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:18.800Z",
+    "elapsedTime": "21.97"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:19.048Z",
+    "elapsedTime": "22.22"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:19.345Z",
+    "elapsedTime": "22.52"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:19.597Z",
+    "elapsedTime": "22.77"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:19.955Z",
+    "elapsedTime": "23.13"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:20.264Z",
+    "elapsedTime": "23.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:21.839Z",
+    "elapsedTime": "25.01"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:22.351Z",
+    "elapsedTime": "25.52"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:22.687Z",
+    "elapsedTime": "25.86"
+  },
+  {
+    "eventType": "Schedule End",
+    "timestamp": "2024-09-12T22:40:23.831Z",
+    "elapsedTime": "27.00",
+    "block": 7,
+    "intervalsGenerated": 0
+  },
+  {
+    "eventType": "Break End",
+    "timestamp": "2024-09-12T22:40:26.424Z",
+    "elapsedTime": "29.60",
+    "result": "Break time"
+  },
+  {
+    "eventType": "Experiment Start",
+    "timestamp": "2024-09-12T22:40:29.454Z",
+    "elapsedTime": "0.00"
+  },
+  {
+    "eventType": "Schedule Start",
+    "timestamp": "2024-09-12T22:40:29.462Z",
+    "elapsedTime": "0.00",
+    "block": 8,
+    "intervalType": 7000,
+    "maxLosses": 8
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:29.783Z",
+    "elapsedTime": "0.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:30.034Z",
+    "elapsedTime": "0.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:30.281Z",
+    "elapsedTime": "0.82"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:30.493Z",
+    "elapsedTime": "1.03"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:40:31.485Z",
+    "elapsedTime": "2.02",
+    "block": 8,
+    "newMode": "blue",
+    "timeLeft": 12872
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:31.903Z",
+    "elapsedTime": "2.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:32.352Z",
+    "elapsedTime": "2.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:32.582Z",
+    "elapsedTime": "3.12"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:32.902Z",
+    "elapsedTime": "3.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:33.196Z",
+    "elapsedTime": "3.73"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:33.457Z",
+    "elapsedTime": "4.00"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:33.708Z",
+    "elapsedTime": "4.25"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:34.070Z",
+    "elapsedTime": "4.61"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:40:34.258Z",
+    "elapsedTime": "4.80",
+    "points": 1352,
+    "losses": 1,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:34.335Z",
+    "elapsedTime": "4.87"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:34.577Z",
+    "elapsedTime": "5.12"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:34.818Z",
+    "elapsedTime": "5.36"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:35.079Z",
+    "elapsedTime": "5.62"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:35.344Z",
+    "elapsedTime": "5.88"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:35.566Z",
+    "elapsedTime": "6.10"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:35.815Z",
+    "elapsedTime": "6.35"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:36.054Z",
+    "elapsedTime": "6.59"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:36.307Z",
+    "elapsedTime": "6.84"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:36.602Z",
+    "elapsedTime": "7.14"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:40:36.916Z",
+    "elapsedTime": "7.45",
+    "points": 1351,
+    "losses": 2,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:36.970Z",
+    "elapsedTime": "7.51"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:37.217Z",
+    "elapsedTime": "7.75"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:37.451Z",
+    "elapsedTime": "7.99"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:37.852Z",
+    "elapsedTime": "8.39"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:38.126Z",
+    "elapsedTime": "8.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:38.381Z",
+    "elapsedTime": "8.92"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:38.648Z",
+    "elapsedTime": "9.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:38.904Z",
+    "elapsedTime": "9.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:39.178Z",
+    "elapsedTime": "9.72"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:39.401Z",
+    "elapsedTime": "9.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:39.656Z",
+    "elapsedTime": "10.19"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:40:39.736Z",
+    "elapsedTime": "10.27",
+    "points": 1350,
+    "losses": 3,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:39.881Z",
+    "elapsedTime": "10.42"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:40.129Z",
+    "elapsedTime": "10.67"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:40.394Z",
+    "elapsedTime": "10.93"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:40.639Z",
+    "elapsedTime": "11.18"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:40.891Z",
+    "elapsedTime": "11.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:41.126Z",
+    "elapsedTime": "11.66"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:41.374Z",
+    "elapsedTime": "11.91"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:40:41.537Z",
+    "elapsedTime": "12.07",
+    "points": 1349,
+    "losses": 4,
+    "controlled": 1
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:41.795Z",
+    "elapsedTime": "12.33"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:42.025Z",
+    "elapsedTime": "12.56"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:42.216Z",
+    "elapsedTime": "12.75"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:40:43.395Z",
+    "elapsedTime": "13.93",
+    "block": 8,
+    "newMode": "yellow",
+    "timeLeft": 3148
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:43.757Z",
+    "elapsedTime": "14.29"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:43.982Z",
+    "elapsedTime": "14.52"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:44.209Z",
+    "elapsedTime": "14.75"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:44.448Z",
+    "elapsedTime": "14.99"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:44.683Z",
+    "elapsedTime": "15.22"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:44.904Z",
+    "elapsedTime": "15.44"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:45.140Z",
+    "elapsedTime": "15.68"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:45.378Z",
+    "elapsedTime": "15.92"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:45.616Z",
+    "elapsedTime": "16.15"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:45.849Z",
+    "elapsedTime": "16.39"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:46.100Z",
+    "elapsedTime": "16.64"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:46.357Z",
+    "elapsedTime": "16.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:46.803Z",
+    "elapsedTime": "17.34"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:47.032Z",
+    "elapsedTime": "17.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:47.292Z",
+    "elapsedTime": "17.83"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:47.515Z",
+    "elapsedTime": "18.05"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:47.740Z",
+    "elapsedTime": "18.28"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:48.020Z",
+    "elapsedTime": "18.56"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:40:48.245Z",
+    "elapsedTime": "18.78",
+    "points": 1348,
+    "losses": 5,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:48.458Z",
+    "elapsedTime": "19.00"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:48.687Z",
+    "elapsedTime": "19.23"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:48.991Z",
+    "elapsedTime": "19.53"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:49.416Z",
+    "elapsedTime": "19.95"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:49.663Z",
+    "elapsedTime": "20.20"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:49.886Z",
+    "elapsedTime": "20.42"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:50.156Z",
+    "elapsedTime": "20.69"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:50.648Z",
+    "elapsedTime": "21.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:50.859Z",
+    "elapsedTime": "21.40"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:51.111Z",
+    "elapsedTime": "21.65"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:51.347Z",
+    "elapsedTime": "21.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:51.572Z",
+    "elapsedTime": "22.11"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:51.836Z",
+    "elapsedTime": "22.37"
+  },
+  {
+    "eventType": "Schedule End",
+    "timestamp": "2024-09-12T22:40:56.465Z",
+    "elapsedTime": "27.00",
+    "block": 8,
+    "intervalsGenerated": 5
+  },
+  {
+    "eventType": "Break End",
+    "timestamp": "2024-09-12T22:40:58.240Z",
+    "elapsedTime": "28.78",
+    "result": "Break time"
+  },
+  {
+    "eventType": "Experiment Start",
+    "timestamp": "2024-09-12T22:40:58.988Z",
+    "elapsedTime": "0.00"
+  },
+  {
+    "eventType": "Schedule Start",
+    "timestamp": "2024-09-12T22:40:58.989Z",
+    "elapsedTime": "0.00",
+    "block": 9,
+    "intervalType": 7000,
+    "maxLosses": 7
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:59.317Z",
+    "elapsedTime": "0.33"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:59.556Z",
+    "elapsedTime": "0.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:40:59.811Z",
+    "elapsedTime": "0.82"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:00.051Z",
+    "elapsedTime": "1.06"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:00.363Z",
+    "elapsedTime": "1.37"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:00.798Z",
+    "elapsedTime": "1.81"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:01.047Z",
+    "elapsedTime": "2.06"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:01.306Z",
+    "elapsedTime": "2.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:01.576Z",
+    "elapsedTime": "2.59"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:01.787Z",
+    "elapsedTime": "2.80"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:02.007Z",
+    "elapsedTime": "3.02"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:02.265Z",
+    "elapsedTime": "3.28"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:02.545Z",
+    "elapsedTime": "3.56"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:03.047Z",
+    "elapsedTime": "4.06"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:03.271Z",
+    "elapsedTime": "4.28"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:03.535Z",
+    "elapsedTime": "4.55"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:03.759Z",
+    "elapsedTime": "4.77"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:04.021Z",
+    "elapsedTime": "5.03"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:04.277Z",
+    "elapsedTime": "5.29"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:04.615Z",
+    "elapsedTime": "5.63"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:04.892Z",
+    "elapsedTime": "5.90"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:05.124Z",
+    "elapsedTime": "6.13"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:05.562Z",
+    "elapsedTime": "6.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:05.810Z",
+    "elapsedTime": "6.82"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:06.094Z",
+    "elapsedTime": "7.11"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:06.385Z",
+    "elapsedTime": "7.40"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:06.791Z",
+    "elapsedTime": "7.80"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:07.086Z",
+    "elapsedTime": "8.10"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:07.345Z",
+    "elapsedTime": "8.36"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:07.625Z",
+    "elapsedTime": "8.64"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:07.876Z",
+    "elapsedTime": "8.89"
+  },
+  {
+    "eventType": "Mode Switched",
+    "timestamp": "2024-09-12T22:41:09.610Z",
+    "elapsedTime": "10.62",
+    "block": 9,
+    "newMode": "blue",
+    "timeLeft": 10250
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:09.905Z",
+    "elapsedTime": "10.92"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:10.182Z",
+    "elapsedTime": "11.19"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:10.408Z",
+    "elapsedTime": "11.42"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:10.639Z",
+    "elapsedTime": "11.65"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:10.880Z",
+    "elapsedTime": "11.89"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:11.108Z",
+    "elapsedTime": "12.12"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:11.334Z",
+    "elapsedTime": "12.35"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:11.557Z",
+    "elapsedTime": "12.57"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:11.797Z",
+    "elapsedTime": "12.81"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:12.290Z",
+    "elapsedTime": "13.30"
+  },
+  {
+    "eventType": "Point Loss",
+    "timestamp": "2024-09-12T22:41:12.303Z",
+    "elapsedTime": "13.31",
+    "points": 1347,
+    "losses": 1,
+    "controlled": 0
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:12.497Z",
+    "elapsedTime": "13.51"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:12.741Z",
+    "elapsedTime": "13.75"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:13.004Z",
+    "elapsedTime": "14.02"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:13.265Z",
+    "elapsedTime": "14.28"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:13.499Z",
+    "elapsedTime": "14.51"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:13.749Z",
+    "elapsedTime": "14.76"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:14.044Z",
+    "elapsedTime": "15.05"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:14.461Z",
+    "elapsedTime": "15.47"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:14.743Z",
+    "elapsedTime": "15.75"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:15.020Z",
+    "elapsedTime": "16.03"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:15.266Z",
+    "elapsedTime": "16.28"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:15.513Z",
+    "elapsedTime": "16.52"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:15.783Z",
+    "elapsedTime": "16.79"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:16.185Z",
+    "elapsedTime": "17.20"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:16.440Z",
+    "elapsedTime": "17.45"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:16.697Z",
+    "elapsedTime": "17.71"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:17.148Z",
+    "elapsedTime": "18.16"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:17.389Z",
+    "elapsedTime": "18.40"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:17.626Z",
+    "elapsedTime": "18.64"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:17.916Z",
+    "elapsedTime": "18.93"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:18.314Z",
+    "elapsedTime": "19.32"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:18.589Z",
+    "elapsedTime": "19.60"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:18.855Z",
+    "elapsedTime": "19.87"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:19.079Z",
+    "elapsedTime": "20.09"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:19.334Z",
+    "elapsedTime": "20.34"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:19.579Z",
+    "elapsedTime": "20.59"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:19.819Z",
+    "elapsedTime": "20.83"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:20.059Z",
+    "elapsedTime": "21.07"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:20.303Z",
+    "elapsedTime": "21.31"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:20.543Z",
+    "elapsedTime": "21.55"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:20.775Z",
+    "elapsedTime": "21.79"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:21.007Z",
+    "elapsedTime": "22.02"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:21.244Z",
+    "elapsedTime": "22.25"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:21.478Z",
+    "elapsedTime": "22.49"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:21.775Z",
+    "elapsedTime": "22.79"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:22.232Z",
+    "elapsedTime": "23.24"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:22.469Z",
+    "elapsedTime": "23.48"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:22.710Z",
+    "elapsedTime": "23.72"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:22.963Z",
+    "elapsedTime": "23.97"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:23.209Z",
+    "elapsedTime": "24.22"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:23.492Z",
+    "elapsedTime": "24.50"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:23.932Z",
+    "elapsedTime": "24.94"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:24.157Z",
+    "elapsedTime": "25.17"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:24.423Z",
+    "elapsedTime": "25.43"
+  },
+  {
+    "eventType": "Button Press",
+    "timestamp": "2024-09-12T22:41:24.881Z",
+    "elapsedTime": "25.89"
+  },
+  {
+    "eventType": "Schedule End",
+    "timestamp": "2024-09-12T22:41:24.991Z",
+    "elapsedTime": "26.00",
+    "block": 9,
+    "intervalsGenerated": 1
   },
   {
     "eventType": "Experiment End",
-    "timestamp": "2024-08-04T22:51:20.793Z",
-    "elapsedTime": "41.00",
+    "timestamp": "2024-09-12T22:41:24.991Z",
+    "elapsedTime": "26.00",
     "result": "Complete"
   }
 ]

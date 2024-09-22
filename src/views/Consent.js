@@ -13,7 +13,7 @@ function Consent() {
   
   const handleAccept = (e) => {
     navigate('/introduction', {
-        state: { ...userData },
+        state: { ...userData, identification, expedition },
       });
   };
 
