@@ -11,6 +11,8 @@ const Summary = () => {
     jsonLog: {},
   };
 
+  console.log("location",location);
+
   const moneyEarned = points * 10;
 
   // Function to remove consecutive duplicate logs
@@ -59,6 +61,11 @@ const Summary = () => {
         result,
         intervalType,
         maxLosses,
+        blueIntervals,
+        yellowIntervals,
+        blueLosses,
+        yellowLosses,
+        mode
       } = log;
       let detail = "";
 
@@ -66,11 +73,11 @@ const Summary = () => {
       if (eventType === "Mode Switched") {
         detail = `Switched to ${handleNull(newMode)}`;
       } else if (eventType === "Point Loss") {
-        detail = `Losses: ${handleNull(losses)}, Controlled: ${handleNull(controlled)}`;
+        detail = `Losses: ${handleNull(losses)}, Controlled: ${handleNull(controlled)}, Mode : ${handleNull(mode)}`;
       } else if (eventType === "Schedule Start") {
         detail = `Block: ${handleNull(block)}, Interval Type: ${handleNull(intervalType)}, MaxLosses: ${handleNull(maxLosses)}`;
       } else if (eventType === "Schedule End") {
-        detail = `Block: ${handleNull(block)}, Intervals: ${handleNull(intervalsGenerated)}`;
+        detail = `Block: ${handleNull(block)}, Intervals: ${handleNull(intervalsGenerated)}, BlueIntervals: ${handleNull(blueIntervals)}, YellowIntervals: ${handleNull(yellowIntervals)}, BlueLosses: ${handleNull(blueLosses)}, YellowLosses: ${handleNull(yellowLosses)}`;
       } else if (eventType === "Experiment End") {
         detail = `Result: ${handleNull(result)}`;
       }
@@ -107,7 +114,8 @@ const Summary = () => {
 
     // Convert cleaned log to CSV and download CSV
     const csv = jsonToCsv(cleanedLog);
-    const csvFileName = "experiment-summary.csv";
+    const { logic, identification } = formData;
+    const csvFileName = `logic_${logic}_identification_${identification}.csv`;
     const csvBlob = new Blob([csv], { type: "text/csv" });
     const csvHref = URL.createObjectURL(csvBlob);
     const csvLink = document.createElement("a");
@@ -118,9 +126,11 @@ const Summary = () => {
     document.body.removeChild(csvLink);
     URL.revokeObjectURL(csvHref);
 
+    //_Numero de la Secuencia (punto) _cédula del participante_
+
     // Clear localStorage and navigate to login
-    localStorage.clear();
-    navigate("/");
+    //localStorage.clear();
+    //navigate("/");
   };
 
   return (
