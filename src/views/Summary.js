@@ -129,8 +129,8 @@ const Summary = () => {
     //_Numero de la Secuencia (punto) _cédula del participante_
 
     // Clear localStorage and navigate to login
-    //localStorage.clear();
-    //navigate("/");
+    localStorage.clear();
+    navigate("/");
   };
 
   return (
