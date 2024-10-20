@@ -57,7 +57,6 @@ const Experiment = () => {
         ];
         break;
       default:
-        // Default case to handle unexpected values
         comp1RIntervals = [];
         console.log("Invalid logic case", logic);
     }
@@ -65,13 +64,10 @@ const Experiment = () => {
     return comp1RIntervals;
   }
 
-  const [riIntervals, setRiIntervals] = useState(
-    getRIntervals(Number(formData.logic ?? 1))
-  );
+  const riIntervals = useRef(getRIntervals(Number(formData.logic ?? 1)));
   const initialPoints = 1400;
   const blockTime = 3; // in seconds
   const blockCounts = [6, 10, 10, 10, 10, 10, 10, 10, 10, 10];
-  //const blockCounts = [2, 2];
   const modeTuples = [
     [1, 1],
     [1, 1],
@@ -85,114 +81,263 @@ const Experiment = () => {
     [0, 1],
   ];
 
+  // State variables and their refs
   const [points, setPoints] = useState(initialPoints);
+  const pointsRef = useRef(points);
+
+  const [currentLosses, setCurrentLosses] = useState(0);
+  const currentLossesRef = useRef(currentLosses);
+
   const [mode, setMode] = useState(BLUE);
+  const [isControlled, setIsControlled] = useState(1);
   const [isRunning, setIsRunning] = useState(false);
   const [currentBlockCount, setCurrentBlockCount] = useState(0);
   const [scheduleIndex, setScheduleIndex] = useState(0);
-  const isControlled = useRef(1);
   const [buttonLabel, setButtonLabel] = useState("START");
-  const [nextInterval, setNextInterval] = useState(0);
+  const [isSwitchDisabled, setIsSwitchDisabled] = useState(true);
 
   const [losses, setLosses] = useState([]);
-  const intervalRef = useRef(null);
-
-  // Ref for intervals
-  const blueIntervalsRef = useRef(0); // Track intervals in BLUE mode
-  const yellowIntervalsRef = useRef(0); // Track intervals in YELLOW mode
-
-  // State for losses
-  const [blueLosses, setBlueLosses] = useState(0); // Track losses in BLUE mode
-  const [yellowLosses, setYellowLosses] = useState(0); // Track losses in YELLOW mode
-
-  const [currentLosses, setCurrentLosses] = useState(0);
-  const [uncontrolledLosses, setUncontrolledLosses] = useState(0);
   const [red, setRed] = useState("dark-red");
-  const logEntriesRef = useRef([]);
 
+  // Use refs for counts that don't impact rendering
+  const blueIntervalsRef = useRef(0);
+  const yellowIntervalsRef = useRef(0);
+  const blueLossesRef = useRef(0);
+  const yellowLossesRef = useRef(0);
+  const uncontrolledLossesRef = useRef(0);
+
+  const modeRef = useRef(mode);
+  const isControlledRef = useRef(isControlled);
+
+  const pointLossTimeoutRef = useRef(null);
+  const logEntriesRef = useRef([]);
   const blockTimerRef = useRef(null);
   const endTimeRef = useRef(Date.now());
   const blockStartTimeRef = useRef(Date.now());
-  const intervalCountRef = useRef(0); // Track the number of intervals generated
-  const intervalStartTimeRef = useRef(Date.now());
-  const [isSwitchDisabled, setIsSwitchDisable] = useState(true);
-  const [logPointLoss, setLogPointLoss] = useState(false);
 
-  const logEvent = (eventType, details = {}) => {
+  // Update refs when state changes
+  useEffect(() => {
+    pointsRef.current = points;
+  }, [points]);
+
+  useEffect(() => {
+    currentLossesRef.current = currentLosses;
+  }, [currentLosses]);
+
+  useEffect(() => {
+    modeRef.current = mode;
+  }, [mode]);
+
+  useEffect(() => {
+    isControlledRef.current = isControlled;
+  }, [isControlled]);
+
+  const logEvent = useCallback((eventType, details = {}) => {
     const elapsedTime = Math.max(
       0,
       (Date.now() - blockStartTimeRef.current) / 1000
-    ).toFixed(2);
+    ).toFixed(3); // Increased precision to milliseconds
     const logEntry = {
       eventType,
       timestamp: new Date().toISOString(),
       elapsedTime,
       ...details,
     };
-    logEntriesRef.current.push(logEntry); // Update ref directly
+    logEntriesRef.current.push(logEntry);
     console.log(JSON.stringify(logEntry));
+  }, []);
+
+  const getMaxLosses = useCallback(() => {
+    if (scheduleIndex === 0) return Infinity; // Ignore the tutorial (schedule 1)
+
+    const controllingScheduleIndex =
+      Math.floor((scheduleIndex - 1) / 3) * 3 + 1;
+
+    const controllingLoss =
+      losses[controllingScheduleIndex] !== undefined
+        ? losses[controllingScheduleIndex]
+        : Infinity;
+
+    return controllingLoss / 2 || Infinity;
+  }, [scheduleIndex, losses]);
+
+  const playErrorSound = useCallback(() => {
+    const context = new (window.AudioContext || window.webkitAudioContext)();
+    const oscillator = context.createOscillator();
+    const gainNode = context.createGain();
+
+    oscillator.type = "square";
+    oscillator.frequency.setValueAtTime(300, context.currentTime);
+    oscillator.connect(gainNode);
+    gainNode.connect(context.destination);
+
+    oscillator.start();
+
+    setTimeout(() => {
+      oscillator.stop();
+      context.close();
+    }, 100);
+  }, []);
+
+  // Stable reference to scheduleNextPointLoss
+  const scheduleNextPointLoss = useRef();
+
+  scheduleNextPointLoss.current = () => {
+    const currentRi = riIntervals.current[scheduleIndex];
+    const randomInterval = Math.max(
+      10,
+      Math.floor(Math.random() * currentRi * 2)
+    );
+
+    // Increment interval counts immediately upon scheduling
+    if (modeRef.current === BLUE) {
+      blueIntervalsRef.current += 1;
+    } else if (modeRef.current === YELLOW) {
+      yellowIntervalsRef.current += 1;
+    }
+
+    // Clear any existing point loss timeout
+    if (pointLossTimeoutRef.current) {
+      clearTimeout(pointLossTimeoutRef.current);
+    }
+
+    pointLossTimeoutRef.current = setTimeout(() => {
+      const currentMode = modeRef.current;
+      const currentIsControlled = isControlledRef.current;
+
+      // Point loss logic
+      if (
+        currentIsControlled ||
+        uncontrolledLossesRef.current < getMaxLosses()
+      ) {
+        // Calculate updated values using refs
+        const updatedPoints = pointsRef.current - 1;
+        const updatedLosses = currentLossesRef.current + 1;
+
+        // Update state
+        setPoints(updatedPoints);
+        setCurrentLosses(updatedLosses);
+
+        // Update refs
+        pointsRef.current = updatedPoints;
+        currentLossesRef.current = updatedLosses;
+
+        if (!currentIsControlled) {
+          uncontrolledLossesRef.current += 1;
+        }
+
+        if (currentMode === BLUE) {
+          blueLossesRef.current += 1;
+        } else if (currentMode === YELLOW) {
+          yellowLossesRef.current += 1;
+        }
+
+        // Log the point loss using the updated values
+        logEvent("Point Loss", {
+          points: updatedPoints,
+          losses: updatedLosses,
+          controlled: currentIsControlled,
+          mode: currentMode,
+        });
+
+        // Trigger visual feedback
+        setRed("red");
+        playErrorSound();
+
+        setTimeout(() => {
+          setRed("dark-red");
+        }, 100);
+      }
+
+      // Schedule the next point loss
+      scheduleNextPointLoss.current();
+    }, randomInterval);
   };
+
+  const startExperiment = useCallback(() => {
+    blockStartTimeRef.current = Date.now();
+
+    logEvent("Schedule Start", {
+      block: scheduleIndex,
+      intervalType: riIntervals.current[scheduleIndex],
+      maxLosses: scheduleIndex > 1 ? getMaxLosses() : 0,
+    });
+
+    if (blockTimerRef.current) {
+      clearInterval(blockTimerRef.current);
+    }
+
+    endTimeRef.current = Date.now();
+
+    blockTimerRef.current = setInterval(() => {
+      const elapsedSeconds = (Date.now() - endTimeRef.current) / 1000;
+      if (elapsedSeconds >= blockTime) {
+        endTimeRef.current = Date.now();
+        setCurrentBlockCount((prevCount) => prevCount + 1);
+      }
+    }, 100);
+
+    // Schedule the first point loss
+    scheduleNextPointLoss.current();
+  }, [blockTime, scheduleIndex, getMaxLosses, logEvent]);
 
   useEffect(() => {
     if (isRunning) {
-      startBlockTimer();
-      generateNextInterval();
+      startExperiment();
     }
 
     return () => {
-      clearInterval(intervalRef.current);
-      clearInterval(blockTimerRef.current);
+      if (blockTimerRef.current) clearInterval(blockTimerRef.current);
+      if (pointLossTimeoutRef.current)
+        clearTimeout(pointLossTimeoutRef.current);
     };
   }, [isRunning]);
 
   useEffect(() => {
-    if (currentBlockCount === blockCounts[scheduleIndex]) {
-      clearInterval(intervalRef.current);
-      clearInterval(blockTimerRef.current);
+    if (currentBlockCount >= blockCounts[scheduleIndex]) {
+      if (blockTimerRef.current) clearInterval(blockTimerRef.current);
+      if (pointLossTimeoutRef.current)
+        clearTimeout(pointLossTimeoutRef.current);
 
-      setLosses((prevLosses) => [...prevLosses, currentLosses]); // Store the losses for the completed block
-      setCurrentLosses(0); // Reset losses for the next block
-
-      // Log the end of the schedule, including totals for intervals and losses in both modes
       logEvent("Schedule End", {
         block: scheduleIndex,
-        intervalsGenerated: intervalCountRef.current,
-        totalLosses: currentLosses,
-        blueIntervals: blueIntervalsRef.current, // Total intervals in BLUE
-        yellowIntervals: yellowIntervalsRef.current, // Total intervals in YELLOW
-        blueLosses: blueLosses, // Total losses in BLUE
-        yellowLosses: yellowLosses, // Total losses in YELLOW
+        totalLosses: currentLossesRef.current,
+        blueIntervals: blueIntervalsRef.current,
+        yellowIntervals: yellowIntervalsRef.current,
+        blueLosses: blueLossesRef.current,
+        yellowLosses: yellowLossesRef.current,
       });
 
-      // Reset the counters for intervals
+      setLosses((prevLosses) => [...prevLosses, currentLossesRef.current]);
+      setCurrentLosses(0);
+
+      // Reset the refs after logging
       blueIntervalsRef.current = 0;
       yellowIntervalsRef.current = 0;
-
-      // Reset the counters for losses
-      setBlueLosses(0);
-      setYellowLosses(0);
-      setUncontrolledLosses(0);
+      blueLossesRef.current = 0;
+      yellowLossesRef.current = 0;
+      uncontrolledLossesRef.current = 0;
 
       // Handle the transition between schedules
       if (scheduleIndex === 0) {
-        //alert("Tutorial finished. Score will be reset.");
         Swal.fire({
           title: "Tutorial Finished!",
           text: "Score will be reset.",
           icon: "info",
           confirmButtonText: "OK",
+          allowOutsideClick: false,
         });
         setPoints(initialPoints); // Reset score after tutorial
         setScheduleIndex((prevIndex) => prevIndex + 1);
         setIsRunning(false);
         logEvent("Experiment End", { result: "Tutorial finished" });
       } else if (scheduleIndex + 1 < blockCounts.length) {
-        //alert("Time to take a break. Select continue to resume.");
         Swal.fire({
           title: "Break Time!",
           text: "Select continue to resume.",
           icon: "info",
           confirmButtonText: "Continue",
+          allowOutsideClick: false,
         });
         setScheduleIndex((prevIndex) => prevIndex + 1);
         setIsRunning(false);
@@ -205,6 +350,7 @@ const Experiment = () => {
           text: "Thanks for participating in the experiment.",
           icon: "success",
           confirmButtonText: "OK",
+          allowOutsideClick: false,
         }).then(() => {
           setTimeout(() => {
             navigate("/summary", {
@@ -214,233 +360,69 @@ const Experiment = () => {
                 points: points,
               },
             });
-          }, 2000); // Delay before navigating
+          }, 2000);
         });
       }
 
-      intervalCountRef.current = 0; // Reset interval count for the next block
+      setCurrentBlockCount(0); // Reset block count
     }
   }, [
-    currentBlockCount
+    currentBlockCount,
+    blockCounts,
+    scheduleIndex,
+    initialPoints,
+    logEvent,
+    navigate,
+    formData,
+    points,
   ]);
 
-  const startBlockTimer = useCallback(() => {
-    blockStartTimeRef.current = Date.now(); // Set block start time
-    intervalCountRef.current = 0; // Reset interval count for the new block
-    logEvent("Schedule Start", {
-      block: scheduleIndex,
-      intervalType: riIntervals[scheduleIndex],
-      maxLosses: scheduleIndex > 1 ? getMaxLosses() : 0,
-    });
-    blockTimerRef.current = setInterval(() => {
-      if ((Date.now() - endTimeRef.current) / 1000 > blockTime) {
-        endTimeRef.current = Date.now();
-        setCurrentBlockCount((prevCount) => prevCount + 1);
-      }
-    }, 1000);
-  }, [blockTime, scheduleIndex]);
-
-  const handleStart = () => {
+  const handleStart = useCallback(() => {
     if (!isRunning) {
-      if (isSwitchDisabled) setIsSwitchDisable(false);
+      setIsSwitchDisabled(false);
       setIsRunning(true);
       endTimeRef.current = Date.now();
-      blockStartTimeRef.current = Date.now(); // Reset block start time
-      setCurrentBlockCount(0); // Reset block count
+      setCurrentBlockCount(0);
       setButtonLabel("PRESS");
       logEvent("Experiment Start");
     }
-  };
+  }, [isRunning, logEvent]);
 
-  const handleSwitch = () => {
-    const timeElapsedSinceIntervalSet =
-      Date.now() - intervalStartTimeRef.current;
-    const timeLeft = nextInterval - timeElapsedSinceIntervalSet;
-    setIsSwitchDisable(true);
+  const handleSwitch = useCallback(() => {
+    setIsSwitchDisabled(true);
 
-    if (timeLeft > 100) {
-      clearTimeout(intervalRef.current);
-      generateNextInterval(timeLeft + 500);
+    if (pointLossTimeoutRef.current) {
+      clearTimeout(pointLossTimeoutRef.current);
     }
 
     const [leftMode, rightMode] = modeTuples[scheduleIndex];
-    console.log(leftMode, rightMode);
 
-    //setMode((prevMode) => (prevMode === BLUE ? YELLOW : BLUE));
     const newMode = mode === BLUE ? YELLOW : BLUE;
-    isControlled.ref = newMode === BLUE ? leftMode : rightMode;
+    const newIsControlled = newMode === BLUE ? leftMode : rightMode;
+
     setMode(newMode);
+    setIsControlled(newIsControlled);
+
     logEvent("Mode Switched", {
       block: scheduleIndex,
       newMode: newMode,
-      timeLeft: timeLeft,
     });
-  };
 
-  useEffect(() => {
-    if (logPointLoss) {
-      // Log the event with updated state values
-      logEvent("Point Loss", {
-        points,
-        losses: currentLosses,
-        controlled: isControlled.ref,
-        mode: mode,
-      });
+    // Reschedule the point loss
+    scheduleNextPointLoss.current();
+  }, [scheduleIndex, mode, modeTuples, logEvent]);
 
-      // Reset the log flag
-      setLogPointLoss(false);
-    }
-  }, [logPointLoss]);
-
-  /*const generateNextInterval = useCallback((fixedTime = null) => {
-    const currentRi = riIntervals[scheduleIndex];
-    const randomInterval =
-      fixedTime ?? Math.floor(Math.random() * (currentRi * 2));
-    setNextInterval(randomInterval);
-    //read time when interval starts
-    intervalStartTimeRef.current = Date.now();
-
-    intervalRef.current = setTimeout(() => {
-      if (isControlled.ref || currentLosses < getMaxLosses()) {
-        setPoints((prevPoints) => prevPoints - 1);
-        setCurrentLosses((prevLosses) => prevLosses + 1);
-        //logEvent("Point Loss", { points: points - 1, losses: currentLosses + 1, controlled: isControlled.ref });
-        setLogPointLoss(true);
-      }
-      setRed("red");
-      playErrorSound();
-      generateNextInterval();
-      setTimeout(() => {
-        setRed("dark-red");
-      }, 100);
-
-      intervalCountRef.current += 1; // Increment the interval count
-    }, randomInterval);
-  });*/
-
-  const generateNextInterval = useCallback(
-    (fixedTime = null) => {
-      const currentRi = riIntervals[scheduleIndex];
-      const randomInterval =
-        fixedTime ?? Math.floor(Math.random() * (currentRi * 2));
-      setNextInterval(randomInterval);
-
-      // Record the time when the interval starts
-      intervalStartTimeRef.current = Date.now();
-
-      intervalRef.current = setTimeout(() => {
-        // Update the interval count based on the current mode (BLUE or YELLOW)
-        if (mode === BLUE) {
-          blueIntervalsRef.current += 1; // Increment BLUE intervals
-        } else if (mode === YELLOW) {
-          yellowIntervalsRef.current += 1; // Increment YELLOW intervals
-        }
-
-        // Check if the system is uncontrolled AND the loss count is under the max limit
-        if (isControlled.ref || uncontrolledLosses < getMaxLosses()) {
-
-          if(!isControlled.ref){
-            console.log("currentLosses", uncontrolledLosses , getMaxLosses());
-            setUncontrolledLosses((prevLosses) => prevLosses + 1);
-          }
-
-          setPoints((prevPoints) => prevPoints - 1); // Deduct a point
-          setCurrentLosses((prevLosses) => prevLosses + 1); // Increment the current losses
-
-          // Log point loss and update loss state based on mode
-          if (mode === BLUE) {
-            setBlueLosses((prevLosses) => prevLosses + 1); // Increment BLUE losses
-          } else if (mode === YELLOW) {
-            setYellowLosses((prevLosses) => prevLosses + 1); // Increment YELLOW losses
-          }
-
-          setLogPointLoss(true); // Trigger point loss logging
-
-          // Visual feedback for error (red box, sound)
-          setRed("red");
-          playErrorSound();
-
-          // Reset the red color after 100ms
-          setTimeout(() => {
-            setRed("dark-red");
-          }, 100);
-        }
-
-
-        // Generate the next interval
-        generateNextInterval();
-
-       
-        intervalCountRef.current += 1; // Increment the interval count
-      }, randomInterval);
-    },
-    [riIntervals, scheduleIndex, mode, currentLosses, points, uncontrolledLosses]
-  );
-
-  /*
-  const getMaxLosses = () => {
-    if (scheduleIndex === 0) return Infinity; // No limit for the first schedule
-    if (scheduleIndex === 1) return losses[0] / 2; // Limit to losses in the first schedule
-    return Math.floor(
-      losses.slice(0, scheduleIndex).reduce((a, b) => a + b, 0) / scheduleIndex
-    ); 
-  };*/
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const getMaxLosses = useCallback(() => {
-    if (scheduleIndex === 0) return Infinity; // Ignore the tutorial (schedule 1)
-
-    // Determine the controlling schedule for the current group of 3 schedules
-    const controllingScheduleIndex =
-      Math.floor((scheduleIndex - 1) / 3) * 3 + 1;
-
-    console.log("controllingScheduleIndex",controllingScheduleIndex);
-
-    // Return half of the losses from the controlling schedule
-    return losses[controllingScheduleIndex - 1] / 2;
-  });
-
-  const handleBoxClick = () => {
+  const handleBoxClick = useCallback(() => {
     if (!isRunning) return;
-    if (isSwitchDisabled) setIsSwitchDisable(false);
+    setIsSwitchDisabled(false);
     if (isControlled) {
-      clearTimeout(intervalRef.current);
-      generateNextInterval();
+      if (pointLossTimeoutRef.current) {
+        clearTimeout(pointLossTimeoutRef.current);
+      }
+      scheduleNextPointLoss.current();
       logEvent("Button Press");
     }
-  };
-
-  const downloadLog = () => {
-    const blob = new Blob([JSON.stringify(logEntriesRef.current, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "experiment-log.json";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
-  function playErrorSound() {
-    const context = new (window.AudioContext || window.webkitAudioContext)();
-    const oscillator = context.createOscillator();
-    const gainNode = context.createGain();
-
-    oscillator.type = "square"; // You can change the type to "sine", "square", "sawtooth", or "triangle"
-    oscillator.frequency.setValueAtTime(300, context.currentTime); // Set frequency in hertz
-    oscillator.connect(gainNode);
-    gainNode.connect(context.destination);
-
-    oscillator.start();
-
-    // Stop the sound after 100 milliseconds
-    setTimeout(() => {
-      oscillator.stop();
-      context.close();
-    }, 100);
-  }
+  }, [isRunning, isControlled, logEvent]);
 
   return (
     <div className="app">

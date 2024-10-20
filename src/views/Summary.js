@@ -55,7 +55,7 @@ const Summary = () => {
         points,
         losses,
         block,
-        intervalsGenerated,
+        //intervalsGenerated,
         newMode,
         controlled,
         result,
@@ -77,7 +77,8 @@ const Summary = () => {
       } else if (eventType === "Schedule Start") {
         detail = `Block: ${handleNull(block)}, Interval Type: ${handleNull(intervalType)}, MaxLosses: ${handleNull(maxLosses)}`;
       } else if (eventType === "Schedule End") {
-        detail = `Block: ${handleNull(block)}, Intervals: ${handleNull(intervalsGenerated)}, BlueIntervals: ${handleNull(blueIntervals)}, YellowIntervals: ${handleNull(yellowIntervals)}, BlueLosses: ${handleNull(blueLosses)}, YellowLosses: ${handleNull(yellowLosses)}`;
+        //detail = `Block: ${handleNull(block)}, Intervals: ${handleNull(intervalsGenerated)}, BlueIntervals: ${handleNull(blueIntervals)}, YellowIntervals: ${handleNull(yellowIntervals)}, BlueLosses: ${handleNull(blueLosses)}, YellowLosses: ${handleNull(yellowLosses)}`;
+        detail = `Block: ${handleNull(block)}, BlueIntervals: ${handleNull(blueIntervals)}, YellowIntervals: ${handleNull(yellowIntervals)}, BlueLosses: ${handleNull(blueLosses)}, YellowLosses: ${handleNull(yellowLosses)}`;
       } else if (eventType === "Experiment End") {
         detail = `Result: ${handleNull(result)}`;
       }
