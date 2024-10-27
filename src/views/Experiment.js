@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Points from "../components/Points";
 import Button from "../components/Button";
@@ -14,7 +14,7 @@ const Experiment = () => {
   const navigate = useNavigate();
 
   // Retrieve formData from location state
-  const formData = location.state || {};
+  const formData = useMemo(() => location.state || {}, [location.state]);
 
   function getRIntervals(logic) {
     let comp1RIntervals;
@@ -67,19 +67,23 @@ const Experiment = () => {
   const riIntervals = useRef(getRIntervals(Number(formData.logic ?? 1)));
   const initialPoints = 1400;
   const blockTime = 3; // in seconds
-  const blockCounts = [6, 10, 10, 10, 10, 10, 10, 10, 10, 10];
-  const modeTuples = [
-    [1, 1],
-    [1, 1],
-    [1, 0],
-    [0, 1],
-    [1, 1],
-    [1, 0],
-    [0, 1],
-    [1, 1],
-    [1, 0],
-    [0, 1],
-  ];
+  const blockCounts = useMemo(() => [6, 10, 10, 10, 10, 10, 10, 10, 10, 10], []);
+  const modeTuples = useMemo(
+    () => [
+      [1, 1],
+      [1, 1],
+      [1, 0],
+      [0, 1],
+      [1, 1],
+      [1, 0],
+      [0, 1],
+      [1, 1],
+      [1, 0],
+      [0, 1],
+    ],
+    []
+  );
+
 
   // State variables and their refs
   const [points, setPoints] = useState(initialPoints);
@@ -92,7 +96,10 @@ const Experiment = () => {
   const [isControlled, setIsControlled] = useState(1);
   const [isRunning, setIsRunning] = useState(false);
   const [currentBlockCount, setCurrentBlockCount] = useState(0);
-  const [scheduleIndex, setScheduleIndex] = useState(0);
+  
+  //const [scheduleIndex, setScheduleIndex] = useState(0);
+  const scheduleIndexRef = useRef(0);
+  
   const [buttonLabel, setButtonLabel] = useState("START");
   const [isSwitchDisabled, setIsSwitchDisabled] = useState(true);
 
@@ -148,18 +155,18 @@ const Experiment = () => {
   }, []);
 
   const getMaxLosses = useCallback(() => {
-    if (scheduleIndex === 0) return Infinity; // Ignore the tutorial (schedule 1)
-
+    if (scheduleIndexRef.current === 0) return Infinity;
+  
     const controllingScheduleIndex =
-      Math.floor((scheduleIndex - 1) / 3) * 3 + 1;
-
+      Math.floor((scheduleIndexRef.current - 1) / 3) * 3 + 1;
+  
     const controllingLoss =
       losses[controllingScheduleIndex] !== undefined
         ? losses[controllingScheduleIndex]
         : Infinity;
-
+  
     return controllingLoss / 2 || Infinity;
-  }, [scheduleIndex, losses]);
+  }, [losses]);  
 
   const playErrorSound = useCallback(() => {
     const context = new (window.AudioContext || window.webkitAudioContext)();
@@ -183,7 +190,7 @@ const Experiment = () => {
   const scheduleNextPointLoss = useRef();
 
   scheduleNextPointLoss.current = () => {
-    const currentRi = riIntervals.current[scheduleIndex];
+    const currentRi = riIntervals.current[scheduleIndexRef.current];
     const randomInterval = Math.max(
       10,
       Math.floor(Math.random() * currentRi * 2)
@@ -258,9 +265,9 @@ const Experiment = () => {
     blockStartTimeRef.current = Date.now();
 
     logEvent("Schedule Start", {
-      block: scheduleIndex,
-      intervalType: riIntervals.current[scheduleIndex],
-      maxLosses: scheduleIndex > 1 ? getMaxLosses() : 0,
+      block: scheduleIndexRef.current,
+      intervalType: riIntervals.current[scheduleIndexRef.current],
+      maxLosses: scheduleIndexRef.current > 1 ? getMaxLosses() : 0,
     });
 
     if (blockTimerRef.current) {
@@ -279,7 +286,7 @@ const Experiment = () => {
 
     // Schedule the first point loss
     scheduleNextPointLoss.current();
-  }, [blockTime, scheduleIndex, getMaxLosses, logEvent]);
+  }, [blockTime, getMaxLosses, logEvent]);
 
   useEffect(() => {
     if (isRunning) {
@@ -291,16 +298,16 @@ const Experiment = () => {
       if (pointLossTimeoutRef.current)
         clearTimeout(pointLossTimeoutRef.current);
     };
-  }, [isRunning]);
+  }, [isRunning, startExperiment]);
 
   useEffect(() => {
-    if (currentBlockCount >= blockCounts[scheduleIndex]) {
+    if (currentBlockCount >= blockCounts[scheduleIndexRef.current]) {
       if (blockTimerRef.current) clearInterval(blockTimerRef.current);
       if (pointLossTimeoutRef.current)
         clearTimeout(pointLossTimeoutRef.current);
 
       logEvent("Schedule End", {
-        block: scheduleIndex,
+        block: scheduleIndexRef.current,
         totalLosses: currentLossesRef.current,
         blueIntervals: blueIntervalsRef.current,
         yellowIntervals: yellowIntervalsRef.current,
@@ -319,7 +326,7 @@ const Experiment = () => {
       uncontrolledLossesRef.current = 0;
 
       // Handle the transition between schedules
-      if (scheduleIndex === 0) {
+      if (scheduleIndexRef.current === 0) {
         Swal.fire({
           title: "Tutorial Finished!",
           text: "Score will be reset.",
@@ -328,10 +335,10 @@ const Experiment = () => {
           allowOutsideClick: false,
         });
         setPoints(initialPoints); // Reset score after tutorial
-        setScheduleIndex((prevIndex) => prevIndex + 1);
+        scheduleIndexRef.current += 1;
         setIsRunning(false);
         logEvent("Experiment End", { result: "Tutorial finished" });
-      } else if (scheduleIndex + 1 < blockCounts.length) {
+      } else if (scheduleIndexRef.current + 1 < blockCounts.length) {
         Swal.fire({
           title: "Break Time!",
           text: "Select continue to resume.",
@@ -339,7 +346,7 @@ const Experiment = () => {
           confirmButtonText: "Continue",
           allowOutsideClick: false,
         });
-        setScheduleIndex((prevIndex) => prevIndex + 1);
+        scheduleIndexRef.current += 1;
         setIsRunning(false);
         logEvent("Break End", { result: "Break time" });
       } else {
@@ -369,7 +376,6 @@ const Experiment = () => {
   }, [
     currentBlockCount,
     blockCounts,
-    scheduleIndex,
     initialPoints,
     logEvent,
     navigate,
@@ -395,7 +401,7 @@ const Experiment = () => {
       clearTimeout(pointLossTimeoutRef.current);
     }
 
-    const [leftMode, rightMode] = modeTuples[scheduleIndex];
+    const [leftMode, rightMode] = modeTuples[scheduleIndexRef.current];
 
     const newMode = mode === BLUE ? YELLOW : BLUE;
     const newIsControlled = newMode === BLUE ? leftMode : rightMode;
@@ -404,13 +410,13 @@ const Experiment = () => {
     setIsControlled(newIsControlled);
 
     logEvent("Mode Switched", {
-      block: scheduleIndex,
+      block: scheduleIndexRef.current,
       newMode: newMode,
     });
 
     // Reschedule the point loss
     scheduleNextPointLoss.current();
-  }, [scheduleIndex, mode, modeTuples, logEvent]);
+  }, [mode, modeTuples, logEvent]);
 
   const handleBoxClick = useCallback(() => {
     if (!isRunning) return;
