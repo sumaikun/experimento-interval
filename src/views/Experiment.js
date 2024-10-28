@@ -1,4 +1,10 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  useMemo,
+} from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Points from "../components/Points";
 import Button from "../components/Button";
@@ -67,7 +73,10 @@ const Experiment = () => {
   const riIntervals = useRef(getRIntervals(Number(formData.logic ?? 1)));
   const initialPoints = 1400;
   const blockTime = 3; // in seconds
-  const blockCounts = useMemo(() => [6, 10, 10, 10, 10, 10, 10, 10, 10, 10], []);
+  const blockCounts = useMemo(
+    () => [6, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+    []
+  );
   const modeTuples = useMemo(
     () => [
       [1, 1],
@@ -84,7 +93,6 @@ const Experiment = () => {
     []
   );
 
-
   // State variables and their refs
   const [points, setPoints] = useState(initialPoints);
   const pointsRef = useRef(points);
@@ -93,13 +101,14 @@ const Experiment = () => {
   const currentLossesRef = useRef(currentLosses);
 
   const [mode, setMode] = useState(BLUE);
-  const [isControlled, setIsControlled] = useState(1);
+  //const [isControlled, setIsControlled] = useState(1);
+
   const [isRunning, setIsRunning] = useState(false);
   const [currentBlockCount, setCurrentBlockCount] = useState(0);
-  
+
   //const [scheduleIndex, setScheduleIndex] = useState(0);
   const scheduleIndexRef = useRef(0);
-  
+
   const [buttonLabel, setButtonLabel] = useState("START");
   const [isSwitchDisabled, setIsSwitchDisabled] = useState(true);
 
@@ -114,7 +123,7 @@ const Experiment = () => {
   const uncontrolledLossesRef = useRef(0);
 
   const modeRef = useRef(mode);
-  const isControlledRef = useRef(isControlled);
+  const isControlledRef = useRef(1);
 
   const pointLossTimeoutRef = useRef(null);
   const logEntriesRef = useRef([]);
@@ -131,13 +140,13 @@ const Experiment = () => {
     currentLossesRef.current = currentLosses;
   }, [currentLosses]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     modeRef.current = mode;
   }, [mode]);
 
   useEffect(() => {
     isControlledRef.current = isControlled;
-  }, [isControlled]);
+  }, [isControlled]);*/
 
   const logEvent = useCallback((eventType, details = {}) => {
     const elapsedTime = Math.max(
@@ -156,17 +165,17 @@ const Experiment = () => {
 
   const getMaxLosses = useCallback(() => {
     if (scheduleIndexRef.current === 0) return Infinity;
-  
+
     const controllingScheduleIndex =
       Math.floor((scheduleIndexRef.current - 1) / 3) * 3 + 1;
-  
+
     const controllingLoss =
       losses[controllingScheduleIndex] !== undefined
         ? losses[controllingScheduleIndex]
         : Infinity;
-  
+
     return controllingLoss / 2 || Infinity;
-  }, [losses]);  
+  }, [losses]);
 
   const playErrorSound = useCallback(() => {
     const context = new (window.AudioContext || window.webkitAudioContext)();
@@ -269,6 +278,9 @@ const Experiment = () => {
       intervalType: riIntervals.current[scheduleIndexRef.current],
       maxLosses: scheduleIndexRef.current > 1 ? getMaxLosses() : 0,
     });
+
+    setMode(BLUE);
+    modeRef.current = BLUE;
 
     if (blockTimerRef.current) {
       clearInterval(blockTimerRef.current);
@@ -407,11 +419,23 @@ const Experiment = () => {
     const newIsControlled = newMode === BLUE ? leftMode : rightMode;
 
     setMode(newMode);
-    setIsControlled(newIsControlled);
+
+    modeRef.current = newMode;
+    //setIsControlled(newIsControlled);
+    isControlledRef.current = newIsControlled;
+
+    console.log(
+      "scheduleIndexRef.current",
+      scheduleIndexRef.current,
+      leftMode,
+      rightMode,
+      isControlledRef.current
+    );
 
     logEvent("Mode Switched", {
       block: scheduleIndexRef.current,
       newMode: newMode,
+      newControlledMode: newIsControlled,
     });
 
     // Reschedule the point loss
@@ -421,14 +445,14 @@ const Experiment = () => {
   const handleBoxClick = useCallback(() => {
     if (!isRunning) return;
     setIsSwitchDisabled(false);
-    if (isControlled) {
+    if (isControlledRef.current) {
       if (pointLossTimeoutRef.current) {
         clearTimeout(pointLossTimeoutRef.current);
       }
       scheduleNextPointLoss.current();
       logEvent("Button Press");
     }
-  }, [isRunning, isControlled, logEvent]);
+  }, [isRunning, logEvent]);
 
   return (
     <div className="app">
