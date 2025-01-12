@@ -72,7 +72,7 @@ const Experiment = () => {
 
   const riIntervals = useRef(getRIntervals(Number(formData.logic ?? 1)));
   const initialPoints = 1400;
-  const blockTime = 3; // in seconds
+  const blockTime = 20; // in seconds
   const blockCounts = useMemo(
     () => [6, 10, 10, 10, 10, 10, 10, 10, 10, 10],
     []
@@ -92,6 +92,26 @@ const Experiment = () => {
     ],
     []
   );
+
+  const resetExperimentState = () => {
+    setIsRunning(false);
+    setCurrentBlockCount(0);
+    setPoints(initialPoints);
+    setCurrentLosses(0);
+
+    // Reset schedule index and logs
+    scheduleIndexRef.current = 0;
+    logEntriesRef.current = [];
+
+    // Reset all refs
+    blueIntervalsRef.current = 0;
+    yellowIntervalsRef.current = 0;
+    blueLossesRef.current = 0;
+    yellowLossesRef.current = 0;
+    uncontrolledLossesRef.current = 0;
+
+    console.log("Experiment state has been reset.");
+  };
 
   // State variables and their refs
   const [points, setPoints] = useState(initialPoints);
@@ -195,6 +215,60 @@ const Experiment = () => {
     }, 100);
   }, []);
 
+  const handlePointLoss = useCallback(() => {
+    const currentMode = modeRef.current;
+    const currentIsControlled = isControlledRef.current;
+
+    if (currentIsControlled || uncontrolledLossesRef.current < getMaxLosses()) {
+      // Update points and losses
+      const updatedPoints = pointsRef.current - 1;
+      const updatedLosses = currentLossesRef.current + 1;
+
+      setPoints(updatedPoints);
+      setCurrentLosses(updatedLosses);
+
+      // Update refs
+      pointsRef.current = updatedPoints;
+      currentLossesRef.current = updatedLosses;
+
+      if (!currentIsControlled) {
+        uncontrolledLossesRef.current += 1;
+      }
+
+      if (currentMode === BLUE) {
+        blueLossesRef.current += 1;
+      } else if (currentMode === YELLOW) {
+        yellowLossesRef.current += 1;
+      }
+
+      // Log the point loss
+      logEvent("Point Loss", {
+        points: updatedPoints,
+        losses: updatedLosses,
+        controlled: currentIsControlled,
+        mode: currentMode,
+      });
+
+      // Trigger visual feedback
+      setRed("red");
+      playErrorSound();
+      setTimeout(() => {
+        setRed("dark-red");
+      }, 100);
+    }
+
+    // Schedule the next point loss
+    scheduleNextPointLoss.current();
+  }, [
+    getMaxLosses,
+    logEvent,
+    pointsRef,
+    currentLossesRef,
+    modeRef,
+    isControlledRef,
+    playErrorSound,
+  ]);
+
   // Stable reference to scheduleNextPointLoss
   const scheduleNextPointLoss = useRef();
 
@@ -218,69 +292,28 @@ const Experiment = () => {
     }
 
     pointLossTimeoutRef.current = setTimeout(() => {
-      const currentMode = modeRef.current;
-      const currentIsControlled = isControlledRef.current;
-
-      // Point loss logic
-      if (
-        currentIsControlled ||
-        uncontrolledLossesRef.current < getMaxLosses()
-      ) {
-        // Calculate updated values using refs
-        const updatedPoints = pointsRef.current - 1;
-        const updatedLosses = currentLossesRef.current + 1;
-
-        // Update state
-        setPoints(updatedPoints);
-        setCurrentLosses(updatedLosses);
-
-        // Update refs
-        pointsRef.current = updatedPoints;
-        currentLossesRef.current = updatedLosses;
-
-        if (!currentIsControlled) {
-          uncontrolledLossesRef.current += 1;
-        }
-
-        if (currentMode === BLUE) {
-          blueLossesRef.current += 1;
-        } else if (currentMode === YELLOW) {
-          yellowLossesRef.current += 1;
-        }
-
-        // Log the point loss using the updated values
-        logEvent("Point Loss", {
-          points: updatedPoints,
-          losses: updatedLosses,
-          controlled: currentIsControlled,
-          mode: currentMode,
-        });
-
-        // Trigger visual feedback
-        setRed("red");
-        playErrorSound();
-
-        setTimeout(() => {
-          setRed("dark-red");
-        }, 100);
-      }
-
-      // Schedule the next point loss
-      scheduleNextPointLoss.current();
+      handlePointLoss();
     }, randomInterval);
   };
 
   const startExperiment = useCallback(() => {
     blockStartTimeRef.current = Date.now();
 
+    const currentBlock = scheduleIndexRef.current;
+    const currentTuple = modeTuples[scheduleIndexRef.current];
+
     logEvent("Schedule Start", {
-      block: scheduleIndexRef.current,
-      intervalType: riIntervals.current[scheduleIndexRef.current],
+      block: currentBlock,
+      intervalType: riIntervals.current[currentBlock],
       maxLosses: scheduleIndexRef.current > 1 ? getMaxLosses() : 0,
+      tuple: currentTuple,
     });
 
+    // start blue in the right position
     setMode(BLUE);
     modeRef.current = BLUE;
+    const [leftMode, _] = currentTuple;
+    isControlledRef.current = leftMode;
 
     if (blockTimerRef.current) {
       clearInterval(blockTimerRef.current);
@@ -298,7 +331,14 @@ const Experiment = () => {
 
     // Schedule the first point loss
     scheduleNextPointLoss.current();
-  }, [blockTime, getMaxLosses, logEvent]);
+  }, [
+    getMaxLosses,
+    logEvent,
+    modeTuples,
+    scheduleIndexRef,
+    riIntervals,
+    blockStartTimeRef,
+  ]);
 
   useEffect(() => {
     if (isRunning) {
@@ -362,8 +402,7 @@ const Experiment = () => {
         setIsRunning(false);
         logEvent("Break End", { result: "Break time" });
       } else {
-        logEvent("Experiment End", { result: "Complete" });
-        setIsRunning(false);
+        logEvent("Experiment End", { result: "Completed" });
         Swal.fire({
           title: "Experiment Complete!",
           text: "Thanks for participating in the experiment.",
@@ -371,6 +410,7 @@ const Experiment = () => {
           confirmButtonText: "OK",
           allowOutsideClick: false,
         }).then(() => {
+          resetExperimentState();
           setTimeout(() => {
             navigate("/summary", {
               state: {
@@ -379,7 +419,7 @@ const Experiment = () => {
                 points: points,
               },
             });
-          }, 2000);
+          }, 500);
         });
       }
 
@@ -424,13 +464,13 @@ const Experiment = () => {
     //setIsControlled(newIsControlled);
     isControlledRef.current = newIsControlled;
 
-    console.log(
+    /*console.log(
       "scheduleIndexRef.current",
       scheduleIndexRef.current,
       leftMode,
       rightMode,
       isControlledRef.current
-    );
+    );*/
 
     logEvent("Mode Switched", {
       block: scheduleIndexRef.current,
@@ -450,7 +490,9 @@ const Experiment = () => {
         clearTimeout(pointLossTimeoutRef.current);
       }
       scheduleNextPointLoss.current();
-      logEvent("Button Press");
+      logEvent("Button Press", {
+        mode: modeRef.current,
+      });
     }
   }, [isRunning, logEvent]);
 

@@ -74,6 +74,8 @@ const Summary = () => {
         detail = `Switched to ${handleNull(newMode)}`;
       } else if (eventType === "Point Loss") {
         detail = `Losses: ${handleNull(losses)}, Controlled: ${handleNull(controlled)}, Mode : ${handleNull(mode)}`;
+      } else if (eventType === "Button Press") {
+        detail = `Mode: ${handleNull(mode)}`;
       } else if (eventType === "Schedule Start") {
         detail = `Block: ${handleNull(block)}, Interval Type: ${handleNull(intervalType)}, MaxLosses: ${handleNull(maxLosses)}`;
       } else if (eventType === "Schedule End") {
